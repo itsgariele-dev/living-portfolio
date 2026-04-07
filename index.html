@@ -233,20 +233,23 @@ nav {
 
 /* ── TRAVEL GUIDES ──────────────── */
 .travel-section {
-  padding: 80px 52px;
-  background: var(--light);
+  padding: 80px 0; /* was 80px 52px — remove horizontal padding */
 }
+.section-label { padding: 0 52px; }
+.section-heading { padding: 0 52px; }
 .guides-scroll-wrap {
-  overflow-x: auto; scrollbar-width: none;
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
   -webkit-mask: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
   mask: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
   margin-top: 36px;
 }
-.guides-scroll-wrap::-webkit-scrollbar { display: none; }
 .guides-row {
   display: flex; gap: 24px;
-  padding: 8px 40px 16px;
+  padding: 8px 52px 16px; /* padding here instead of on the section */
   width: max-content;
+  min-width: 100%; /* ensures the row fills the wrapper even when cards don't overflow */
 }
 .guide-card {
   width: 300px; flex-shrink: 0;
