@@ -140,32 +140,97 @@ nav {
   display:block; opacity:.88;
 }
 
-/* ── ABOUT ──────────────────────── */
+/* ── CURRENTLY ──────────────────── */
 .about {
-  padding:88px 52px;
-  display:grid; grid-template-columns:1fr 1fr;
-  gap:60px; align-items:start;
-  background:var(--light);
+  padding: 88px 52px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  background: var(--light);
 }
+
 .about-text p {
-  font-size:15px; line-height:1.75;
-  color:var(--dark); opacity:.7; margin-bottom:16px;
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--dark);
+  opacity: .7;
+  margin-bottom: 20px;
 }
-.about-text p:last-child { margin-bottom:0; }
-.about-right { display:flex; flex-direction:column; gap:28px; }
+
+.about-text p:last-child { margin-bottom: 0; }
+
+/* Location / season meta line */
+.currently-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--dark);
+  opacity: .45;
+  margin-top: 4px;
+}
+
+.meta-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #d3eb9a;
+  flex-shrink: 0;
+  /* subtle pulse to signal "live" */
+  animation: pulse 2.8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: .45; transform: scale(.75); }
+}
+
+/* Right column */
+.about-right { display: flex; flex-direction: column; }
+
 .zones-grid {
-  display:grid; grid-template-columns:1fr 1fr; gap:10px;
-  margin-top:8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
 }
+
+/* Each "currently" card */
 .zone {
-  font-family:var(--mono); font-size:12px;
-  letter-spacing:.1em; text-transform:uppercase;
-  border:1px solid rgba(74,43,60,.15);
-  border-radius:6px; padding:10px 14px;
-  color:var(--dark); opacity:.65;
-  transition:opacity .2s, border-color .2s;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 2px solid #d3eb9a;
+  border-radius: 8px;
+  padding: 14px 16px;
+  background: #fff;
+  transition: background .2s, border-color .2s;
 }
-.zone:hover { opacity:1; border-color:rgba(74,43,60,.4); }
+
+.zone:hover {
+  background: #f9fdf0;
+  border-color: #b8d678;
+}
+
+.zone-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--dark);
+  opacity: .5;
+}
+
+.zone-value {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--dark);
+  font-weight: 500;
+}
 
 /* ── PHOTOS ─────────────────────── */
 .photos-section {
@@ -500,6 +565,18 @@ footer {
 .footer-ol:hover { opacity:.5; }
 
 /* ── MOBILE ─────────────────────── */
+
+  @media (max-width: 768px) {
+  .about {
+    grid-template-columns: 1fr;
+    padding: 60px 24px;
+    gap: 36px;
+  }
+  .zones-grid {
+    grid-template-columns: 1fr;
+  }
+}
+  
 @media (max-width:768px) {
   nav { padding:0 20px; }
   .nav-links { display:none; }
@@ -587,26 +664,51 @@ footer {
   </div>
 </section>
 
-<!-- ABOUT -->
+<!-- CURRENTLY -->
 <section class="about" id="currently">
   <div class="about-text">
-    <span class="section-label">About me</span>
-    <h2 class="section-heading">Hi, I'm Gariele.</h2>
-    <p>I've spent my career at the intersection of digital marketing, visual storytelling, brand strategy, and community — building movements that didn't exist before, and empowering women to do the same.</p>
-    <p>I'm a creative strategist, photographer, angel investor, and parent in a beautifully busy family. I believe in betting on women early — in brands, in business, and in life.</p>
-    <p>Today I'm a brand builder, creative strategist, angel investor, voracious reader, travel guide builder, and side quest collector who makes small tools for fun + shares them for free.</p>
+    <span class="section-label">Currently</span>
+    <h2 class="section-heading">Things I'm loving.</h2>
+    <p>A living snapshot of what's on my mind, in my ears, and on my nightstand right now. Updated whenever the mood strikes.</p>
+    <div class="currently-meta">
+      <span class="meta-dot"></span>
+      <span>Victoria, BC &nbsp;·&nbsp; Spring 2026</span>
+    </div>
   </div>
+
   <div class="about-right">
-    <div>
-      <span class="section-label">Zones of genius</span>
-      <div class="zones-grid">
-        <div class="zone">Brand Strategy</div>
-        <div class="zone">Social Media</div>
-        <div class="zone">Creative Direction</div>
-        <div class="zone">Visual Design</div>
-        <div class="zone">Copywriting</div>
-        <div class="zone">Photography</div>
+    <div class="zones-grid">
+
+      <div class="zone">
+        <span class="zone-label">Currently Reading</span>
+        <span class="zone-value">The Familiar — Leigh Bardugo</span>
       </div>
+
+      <div class="zone">
+        <span class="zone-label">Currently Listening</span>
+        <span class="zone-value">Chappell Roan on repeat, no notes</span>
+      </div>
+
+      <div class="zone">
+        <span class="zone-label">Currently Watching</span>
+        <span class="zone-value">The Last of Us S2</span>
+      </div>
+
+      <div class="zone">
+        <span class="zone-label">Currently Obsessed With</span>
+        <span class="zone-value">Building small tools that solve exactly one problem</span>
+      </div>
+
+      <div class="zone">
+        <span class="zone-label">Currently Working On</span>
+        <span class="zone-value">Tofino travel guide + this site</span>
+      </div>
+
+      <div class="zone">
+        <span class="zone-label">Currently Inspired By</span>
+        <span class="zone-value">Coastal light, bad weather, and good fiction</span>
+      </div>
+
     </div>
   </div>
 </section>
