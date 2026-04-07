@@ -169,67 +169,88 @@ nav {
 
 /* ── PHOTOS ─────────────────────── */
 .photos-section {
-  padding:80px 52px;
-  background:var(--cream);
+  padding: 80px 52px;
+  background: var(--cream);
 }
 .photos-header {
-  display:flex; justify-content:space-between;
-  align-items:flex-end; margin-bottom:36px;
-  flex-wrap:wrap; gap:16px;
+  display: flex; justify-content: space-between;
+  align-items: flex-end; margin-bottom: 36px;
+  flex-wrap: wrap; gap: 16px;
 }
 .photos-header-right {
-  font-family:var(--mono); font-size:12px;
-  letter-spacing:.1em; text-transform:uppercase;
-  opacity:.4;
+  font-family: var(--mono); font-size: 12px;
+  letter-spacing: .1em; text-transform: uppercase;
+  opacity: .4;
 }
 .photos-header-right a {
-  color:var(--dark); text-decoration:none;
-  border-bottom:1px solid rgba(74,43,60,.3);
-  padding-bottom:1px; transition:opacity .2s;
+  color: var(--dark); text-decoration: none;
+  border-bottom: 1px solid rgba(74,43,60,.3);
+  padding-bottom: 1px; transition: opacity .2s;
 }
-.photos-header-right a:hover { opacity:1; }
+.photos-header-right a:hover { opacity: 1; }
 .photos-scroll-wrap {
-  overflow-x:auto; scrollbar-width:none;
-  -webkit-mask:linear-gradient(to right,transparent 0%,black 4%,black 96%,transparent 100%);
-  mask:linear-gradient(to right,transparent 0%,black 4%,black 96%,transparent 100%);
+  overflow-x: auto; scrollbar-width: none;
+  -webkit-mask: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+  mask: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
 }
-.photos-scroll-wrap::-webkit-scrollbar { display:none; }
+.photos-scroll-wrap::-webkit-scrollbar { display: none; }
 .photos-row {
-  display:flex; gap:20px;
-  padding:8px 40px 16px;
-  width:max-content;
+  display: flex; gap: 20px;
+  padding: 8px 40px 16px;
+  width: max-content;
 }
 .photo-card {
-  width:280px; flex-shrink:0;
-  position:relative; border-radius:4px;
-  overflow:hidden; cursor:pointer;
-  box-shadow:0 4px 20px rgba(74,43,60,.12);
-  transition:transform .3s, box-shadow .3s;
+  width: 280px; flex-shrink: 0;
+  border-radius: 4px; overflow: hidden;
+  box-shadow: 0 4px 20px rgba(74,43,60,.12);
+  background: #fff;
+  transition: transform .3s, box-shadow .3s;
+  display: flex; flex-direction: column;
 }
 .photo-card:hover {
-  transform:translateY(-6px);
-  box-shadow:0 12px 36px rgba(74,43,60,.2);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(74,43,60,.2);
 }
 .photo-card img {
-  width:100%; aspect-ratio:3/4;
-  object-fit:cover; display:block;
+  width: 100%; aspect-ratio: 3/4;
+  object-fit: cover; display: block;
 }
-.photo-card-hover {
-  position:absolute; inset:0;
-  background:rgba(74,43,60,.6);
-  display:flex; align-items:center; justify-content:center;
-  opacity:0; transition:opacity .25s;
+.photo-card-info {
+  padding: 16px 18px 20px;
+  display: flex; flex-direction: column;
+  gap: 6px; flex: 1;
 }
-.photo-card:hover .photo-card-hover { opacity:1; }
+.photo-card-title {
+  font-family: var(--serif);
+  font-size: 17px;
+  color: var(--dark);
+  margin: 0;
+  line-height: 1.2;
+}
+.photo-card-blurb {
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--dark);
+  opacity: .6;
+  margin: 0 0 10px;
+  line-height: 1.5;
+}
 .photo-card-dl {
-  background:var(--accent); color:var(--dark);
-  font-family:var(--mono); font-size:12px;
-  letter-spacing:.1em; text-transform:uppercase;
-  font-weight:500; padding:10px 18px;
-  border-radius:20px; text-decoration:none;
-  transition:transform .15s;
+  display: inline-block;
+  align-self: flex-start;
+  background: var(--accent);
+  color: var(--dark);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: transform .15s, opacity .15s;
 }
-.photo-card-dl:hover { transform:scale(1.04); }
+.photo-card-dl:hover { transform: scale(1.04); opacity: .85; }
 
 /* ── TRAVEL GUIDES ──────────────── */
 .travel-section {
@@ -594,8 +615,8 @@ footer {
 <section class="photos-section" id="photos">
   <div class="photos-header">
     <div>
-      <span class="section-label">Photos for You</span>
-      <h2 class="section-heading">Free Phone Wallpapers</h2>
+      <span class="section-label">Free Phone Wallpapers</span>
+      <h2 class="section-heading">Photos for you to keep</h2>
     </div>
     <div class="photos-header-right">
       Want a real print? <a href="https://dreamworthy.pixieset.com/prints/" target="_blank">Visit the print shop →</a>
@@ -603,46 +624,65 @@ footer {
   </div>
   <div class="photos-scroll-wrap">
     <div class="photos-row">
+
       <div class="photo-card">
         <img src="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-1.jpg" alt="Wallpaper 1">
-        <div class="photo-card-hover">
-          <a href="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-1.jpg" target="_blank" class="photo-card-dl">↓ Download</a>
+        <div class="photo-card-info">
+          <p class="photo-card-title">Remote Beach</p>
+          <p class="photo-card-blurb">Taken during a surf session at China Beach on Vancouver Island.</p>
+          <a href="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-1.jpg" download class="photo-card-dl">↓ Download</a>
         </div>
       </div>
+
       <div class="photo-card">
         <img src="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-2.jpg" alt="Wallpaper 2">
-        <div class="photo-card-hover">
-          <a href="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-2.jpg" target="_blank" class="photo-card-dl">↓ Download</a>
+        <div class="photo-card-info">
+          <p class="photo-card-title">Jungle Cruise</p>
+          <p class="photo-card-blurb">The most magical place on earth - if you can believe it.</p>
+          <a href="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-2.jpg" download class="photo-card-dl">↓ Download</a>
         </div>
       </div>
+
       <div class="photo-card">
         <img src="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-3.jpg" alt="Wallpaper 3">
-        <div class="photo-card-hover">
-          <a href="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-3.jpg" target="_blank" class="photo-card-dl">↓ Download</a>
+        <div class="photo-card-info">
+          <p class="photo-card-title">Vancouver Island From Above</p>
+          <p class="photo-card-blurb">Taken from a Cessna 5,000ft above the mountains.</p>
+          <a href="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-3.jpg" download class="photo-card-dl">↓ Download</a>
         </div>
       </div>
+
       <div class="photo-card">
         <img src="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-4.jpg" alt="Wallpaper 4">
-        <div class="photo-card-hover">
-          <a href="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-4.jpg" target="_blank" class="photo-card-dl">↓ Download</a>
+        <div class="photo-card-info">
+          <p class="photo-card-title">Paris Je T'aime</p>
+          <p class="photo-card-blurb">A quiet moment at Sacre Coeur, overlooking the city below.</p>
+          <a href="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-4.jpg" download class="photo-card-dl">↓ Download</a>
         </div>
       </div>
+
       <div class="photo-card">
         <img src="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-5.jpg" alt="Wallpaper 5">
-        <div class="photo-card-hover">
-          <a href="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-5.jpg" target="_blank" class="photo-card-dl">↓ Download</a>
+        <div class="photo-card-info">
+          <p class="photo-card-title">New York New York</p>
+          <p class="photo-card-blurb">One of the many skylines in New York City.</p>
+          <a href="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-5.jpg" download class="photo-card-dl">↓ Download</a>
         </div>
       </div>
+
       <div class="photo-card">
         <img src="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-6.jpg" alt="Wallpaper 6">
-        <div class="photo-card-hover">
-          <a href="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-6.jpg" target="_blank" class="photo-card-dl">↓ Download</a>
+        <div class="photo-card-info">
+          <p class="photo-card-title">The Round Tower</p>
+          <p class="photo-card-blurb">Rundetaarn - A living landmark of Copenhagen since 1642.</p>
+          <a href="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-6.jpg" download class="photo-card-dl">↓ Download</a>
         </div>
       </div>
+
     </div>
   </div>
 </section>
-
+  
 <!-- TRAVEL GUIDES -->
 <section class="travel-section" id="travel">
   <span class="section-label">Free travel guides</span>
