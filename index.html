@@ -233,67 +233,62 @@ nav {
 
 /* ── TRAVEL GUIDES ──────────────── */
 .travel-section {
-  padding:80px 52px;
-  background:var(--light);
+  padding: 80px 52px;
+  background: var(--light);
 }
 .guides-scroll-wrap {
-  overflow-x:auto; scrollbar-width:none;
-  -webkit-mask:linear-gradient(to right,transparent 0%,black 4%,black 96%,transparent 100%);
-  mask:linear-gradient(to right,transparent 0%,black 4%,black 96%,transparent 100%);
-  margin-top:36px;
+  overflow-x: auto; scrollbar-width: none;
+  -webkit-mask: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+  mask: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+  margin-top: 36px;
 }
-.guides-scroll-wrap::-webkit-scrollbar { display:none; }
+.guides-scroll-wrap::-webkit-scrollbar { display: none; }
 .guides-row {
-  display:flex; gap:24px;
-  padding:8px 40px 16px;
-  width:max-content;
+  display: flex; gap: 24px;
+  padding: 8px 40px 16px;
+  width: max-content;
 }
 .guide-card {
-  width:300px; flex-shrink:0;
-  border-radius:6px; overflow:hidden;
-  position:relative; cursor:pointer;
-  box-shadow:0 4px 20px rgba(74,43,60,.12);
-  transition:transform .3s, box-shadow .3s;
+  width: 300px; flex-shrink: 0;
+  border-radius: 10px; overflow: hidden;
+  background: #fff; cursor: pointer;
+  box-shadow: 0 2px 12px rgba(74,43,60,.10);
+  border: 1px solid rgba(74,43,60,.09);
+  transition: transform .3s, box-shadow .3s;
 }
 .guide-card:hover {
-  transform:translateY(-6px);
-  box-shadow:0 14px 40px rgba(74,43,60,.2);
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(74,43,60,.2);
 }
 .guide-card img {
-  width:100%; aspect-ratio:4/5;
-  object-fit:cover; display:block;
+  width: 100%; aspect-ratio: 4/5;
+  object-fit: cover; display: block;
 }
-.guide-card-hover {
-  position:absolute; inset:0;
-  background:rgba(74,43,60,.7);
-  display:flex; flex-direction:column;
-  align-items:center; justify-content:center;
-  gap:14px; padding:24px;
-  opacity:0; transition:opacity .3s;
-  text-align:center;
+.guide-card-info {
+  padding: 18px 20px 20px;
+  display: flex; flex-direction: column; gap: 8px;
 }
-.guide-card:hover .guide-card-hover { opacity:1; }
 .guide-card-city {
-  font-family:var(--serif); font-size:28px;
-  color:var(--light); line-height:1;
+  font-family: var(--serif); font-size: 26px;
+  color: var(--dark); line-height: 1;
 }
 .guide-card-desc {
-  font-size:13px; line-height:1.6;
-  color:var(--light); opacity:.75;
+  font-size: 13px; line-height: 1.6;
+  color: var(--dark); opacity: .65; margin: 0;
 }
 .guide-pill {
-  display:inline-flex; align-items:center;
-  background:var(--accent); color:var(--dark);
-  font-family:var(--mono); font-size:14px;
-  letter-spacing:.1em; text-transform:uppercase;
-  font-weight:500; padding:9px 18px;
-  border-radius:20px; text-decoration:none;
-  transition:transform .15s;
+  display: inline-flex; align-items: center; align-self: flex-start;
+  background: var(--accent); color: var(--dark);
+  font-family: var(--mono); font-size: 13px;
+  letter-spacing: .1em; text-transform: uppercase;
+  font-weight: 500; padding: 9px 18px;
+  border-radius: 20px; text-decoration: none;
+  transition: transform .15s; margin-top: 4px;
 }
-.guide-pill:hover { transform:scale(1.04); }
+.guide-pill:hover { transform: scale(1.04); }
 .guide-pill-disabled {
-  background:rgba(244,239,234,.2); color:var(--light);
-  cursor:default; opacity:.7;
+  background: rgba(74,43,60,.08); color: var(--dark);
+  cursor: default; opacity: .5;
 }
 
 /* ── BOOKS ──────────────────────── */
@@ -640,7 +635,7 @@ footer {
 
       <div class="guide-card">
         <img src="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/Copenhagen.jpg" alt="Copenhagen">
-        <div class="guide-card-hover">
+        <div class="guide-card-info">
           <div class="guide-card-city">Copenhagen</div>
           <p class="guide-card-desc">A curated guide to 3 unforgettable days in the most liveable city in Denmark</p>
           <a href="https://copenhagen-travel-guide.vercel.app" target="_blank" class="guide-pill">Get the guide</a>
@@ -649,7 +644,7 @@ footer {
 
       <div class="guide-card">
         <img src="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/Gothenburg.jpg" alt="Gothenburg">
-        <div class="guide-card-hover">
+        <div class="guide-card-info">
           <div class="guide-card-city">Gothenburg</div>
           <p class="guide-card-desc">Sweden's most underrated city — a weeklong itinerary for one unforgettable week in Gothenburg</p>
           <a href="https://gothenburg-travel-guide.vercel.app" target="_blank" class="guide-pill">Get the guide</a>
@@ -658,7 +653,7 @@ footer {
 
       <div class="guide-card">
         <img src="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/Edinburgh.jpg" alt="Edinburgh">
-        <div class="guide-card-hover">
+        <div class="guide-card-info">
           <div class="guide-card-city">Edinburgh</div>
           <p class="guide-card-desc">A dreamy itinerary for 5 unforgettable days in Edinburgh, Scotland</p>
           <a href="https://edinburgh-travel-guide.vercel.app" target="_blank" class="guide-pill">Get the guide</a>
@@ -667,7 +662,7 @@ footer {
 
       <div class="guide-card">
         <img src="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/Victoria.jpg" alt="Victoria">
-        <div class="guide-card-hover">
+        <div class="guide-card-info">
           <div class="guide-card-city">Victoria</div>
           <p class="guide-card-desc">My home town! And a curated guide to slow travel in BC's most beautiful city</p>
           <a href="https://victoria-travel-guide.vercel.app" target="_blank" class="guide-pill">Get the guide</a>
@@ -676,7 +671,7 @@ footer {
 
       <div class="guide-card">
         <img src="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/Dublin.jpg" alt="Dublin">
-        <div class="guide-card-hover">
+        <div class="guide-card-info">
           <div class="guide-card-city">Dublin</div>
           <p class="guide-card-desc">A curated guide to 5 unforgettable days in Ireland</p>
           <a href="https://dublin-travel-guide.vercel.app" target="_blank" class="guide-pill">Get the guide</a>
@@ -685,7 +680,7 @@ footer {
 
       <div class="guide-card">
         <img src="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/Tofino.jpg" alt="Tofino">
-        <div class="guide-card-hover">
+        <div class="guide-card-info">
           <div class="guide-card-city">Tofino</div>
           <p class="guide-card-desc">A 3-day travel guide and itinerary to enjoying Canada's premiere surf destination</p>
           <a href="#" target="_blank" class="guide-pill">COMING SOON</a>
