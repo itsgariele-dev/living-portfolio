@@ -10,9 +10,9 @@
 <style>
 :root {
   --dark: #4a2b3c;
-  --light: #f4efea;
+  --light: #fbfbf9;
   --accent: #d3eb9a;
-  --cream: #f0ebe3;
+  --cream: #f4efea;
   --serif: 'Instrument Serif', Georgia, serif;
   --sans: 'Inter', sans-serif;
   --mono: 'DM Mono', monospace;
@@ -92,11 +92,11 @@ nav {
 /* ── HERO ───────────────────────── */
 .hero {
   display:grid; grid-template-columns:1fr 1fr;
-  min-height:90vh;
+  min-height:60vh;
   background:var(--dark);
 }
 .hero-left {
-  padding:72px 56px;
+  padding:80px 56px;
   display:flex; flex-direction:column; justify-content:center;
   color:var(--light);
 }
@@ -117,14 +117,14 @@ nav {
 .hero-jump {
   font-family:var(--mono); font-size:16px;
   letter-spacing:.1em; text-transform:uppercase;
-  border:1.5px solid rgba(244,239,234,.2);
+  border:2px solid #d3eb9a;
   color:var(--light); padding:9px 18px;
   border-radius:20px; text-decoration:none;
   transition:background .2s, border-color .2s;
 }
 .hero-jump:hover {
-  background:rgba(244,239,234,.1);
-  border-color:rgba(244,239,234,.4);
+  background: #d3eb9a;
+  border-color: #d3eb9a;
 }
 .hero-jump.accent {
   background:var(--accent); color:var(--dark);
@@ -156,39 +156,10 @@ nav {
   line-height: 1.75;
   color: var(--dark);
   opacity: .7;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .about-text p:last-child { margin-bottom: 0; }
-
-/* Location / season meta line */
-.currently-meta {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: var(--dark);
-  opacity: .45;
-  margin-top: 4px;
-}
-
-.meta-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #d3eb9a;
-  flex-shrink: 0;
-  /* subtle pulse to signal "live" */
-  animation: pulse 2.8s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: .45; transform: scale(.75); }
-}
 
 /* Right column */
 .about-right { display: flex; flex-direction: column; }
@@ -651,7 +622,7 @@ footer {
 <!-- HERO -->
 <section class="hero">
   <div class="hero-left">
-    <h1 class="hero-name">Gariele<br>Wright</h1>
+    <h1 class="hero-name">Gariele Wright</h1>
     <p class="hero-tagline">Creative strategist, brand builder, side quest collector. Here's a glimpse into my world — photos, travel guides, book recommendations, tools I've built, and a little bit about what I do.</p>
     <div class="hero-jump-btns">
       <a href="#photos" class="hero-jump">Wallpapers</a>
@@ -671,10 +642,6 @@ footer {
     <span class="section-label">Currently</span>
     <h2 class="section-heading">Things I'm loving.</h2>
     <p>A living snapshot of what's on my mind, in my ears, and on my nightstand right now. Updated whenever the mood strikes.</p>
-    <div class="currently-meta">
-      <span class="meta-dot"></span>
-      <span>Victoria, BC &nbsp;·&nbsp; Spring 2026</span>
-    </div>
   </div>
 
   <div class="about-right">
