@@ -21,30 +21,6 @@
 html { scroll-behavior:smooth; }
 body { background:var(--cream); color:var(--dark); font-family:var(--sans); overflow-x:hidden; }
 
-/* ── TICKER ─────────────────────── */
-.ticker {
-  background:var(--dark); padding:9px 0;
-  overflow:hidden; white-space:nowrap;
-}
-.ticker-track {
-  display:inline-flex; align-items:center;
-  animation:ticker 36s linear infinite;
-}
-.ticker-track span {
-  font-family:var(--mono); font-size:12px;
-  letter-spacing:.14em; text-transform:uppercase;
-  color:var(--light); opacity:.55; padding:0 24px;
-}
-.ticker-track a {
-  font-family:var(--mono); font-size:12px;
-  letter-spacing:.14em; text-transform:uppercase;
-  color:var(--accent); opacity:.9; padding:0 24px;
-  text-decoration:none; transition:opacity .2s;
-}
-.ticker-track a:hover { opacity:1; }
-.ticker-track .dot { color:var(--accent); opacity:.7; padding:0 4px; }
-@keyframes ticker { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
-
 /* ── NAV ────────────────────────── */
 nav {
   position:sticky; top:0; z-index:200;
@@ -139,6 +115,30 @@ nav {
   object-fit:cover; object-position:center top;
   display:block; opacity:.88;
 }
+
+  /* ── TICKER ─────────────────────── */
+.ticker {
+  background:var(--dark); padding:9px 0;
+  overflow:hidden; white-space:nowrap;
+}
+.ticker-track {
+  display:inline-flex; align-items:center;
+  animation:ticker 36s linear infinite;
+}
+.ticker-track span {
+  font-family:var(--mono); font-size:12px;
+  letter-spacing:.14em; text-transform:uppercase;
+  color:var(--light); opacity:.55; padding:0 24px;
+}
+.ticker-track a {
+  font-family:var(--mono); font-size:12px;
+  letter-spacing:.14em; text-transform:uppercase;
+  color:var(--accent); opacity:.9; padding:0 24px;
+  text-decoration:none; transition:opacity .2s;
+}
+.ticker-track a:hover { opacity:1; }
+.ticker-track .dot { color:var(--accent); opacity:.7; padding:0 4px; }
+@keyframes ticker { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
 
 /* ── CURRENTLY ──────────────────── */
 .about {
