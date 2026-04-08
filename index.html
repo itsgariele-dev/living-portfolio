@@ -425,110 +425,73 @@ nav {
 
 /* ── TOOLS ──────────────────────── */
 .tools-section {
-  padding: 80px;
+  padding: 80px 52px;
   background: var(--dark);
   color: var(--light);
 }
-.doors-grid {
+.tools-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
   margin-top: 36px;
 }
-.door {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 0.6;
-  border-radius: 999px 999px 8px 8px;
-  cursor: pointer;
+.tool-card {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
+  color: var(--light);
+  gap: 14px;
+}
+.tool-card-img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+.tool-card-body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 32px 28px;
-  box-sizing: border-box;
-  overflow: hidden;
-  transition: transform .25s, box-shadow .25s;
+  gap: 6px;
 }
-.door:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 48px rgba(0,0,0,.25);
-}
-.door-1 { background: #d3eb9a; }
-.door-2 { background: #f4efea; }
-.door-3 { background: #e6e3f7; }
-.door-arch {
-  position: absolute;
-  top: 14px; left: 14px; right: 14px; bottom: 14px;
-  border-radius: 999px 999px 4px 4px;
-  border: 1.5px solid rgba(0,0,0,.12);
-  pointer-events: none;
-}
-.door-knob {
-  position: absolute;
-  right: 24px;
-  top: 50%;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: rgba(0,0,0,.25);
-}
-.door-inner {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-.door-number {
+.tool-card-tag {
   font-family: var(--mono);
-  font-size: 14px;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  color: #4a2b3c;
-  opacity: .45;
-}
-.door-tag {
-  font-family: var(--mono);
-  font-size: 14px;
+  font-size: 9px;
   letter-spacing: .12em;
   text-transform: uppercase;
-  color: #4a2b3c;
+  color: var(--accent);
+  opacity: .7;
 }
-.door-title {
+.tool-card-name {
   font-family: var(--serif);
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.15;
   font-weight: 400;
-  color: #4a2b3c;
 }
-.door-desc {
+.tool-card-desc {
   font-size: 14px;
-  line-height: 1.55;
-  color: #4a2b3c;
+  opacity: .5;
+  line-height: 1.5;
   margin: 0;
 }
-.door-btn {
-  margin-top: 6px;
-  display: inline-block;
-  background: #ffffff;
-  color: #4a2b3c;
-  font-family: var(--mono);
-  font-size: 14px;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  padding: 8px 20px;
-  border-radius: 999px;
+.tool-card-link {
+  font-size: 13px;
+  color: var(--light);
+  opacity: .5;
   text-decoration: none;
+  margin-top: 2px;
+  transition: opacity .2s;
+}
+.tool-card:hover .tool-card-link {
+  opacity: 1;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 768px) {
   .tools-section { padding: 60px 24px; }
-  .doors-grid { grid-template-columns: 1fr; }
-  .door { aspect-ratio: 1.2; }
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 14px;
+  }
 }
   
 /* ── WORK ───────────────────────── */
@@ -993,44 +956,50 @@ footer {
   </div>
 </section>
 
+  <!-- TOOLS -->
+
 <section class="tools-section" id="tools">
   <span class="section-label" style="color:var(--light);opacity:.35;">The lab</span>
-  <h2 class="section-heading" style="color:var(--light);">Tools, apps, and surprises to make your life easier (and funner!)</h2>
-  <div class="doors-grid">
+  <h2 class="section-heading" style="color:var(--light);">Tools, apps, and surprises to make your life easier (and more fun!)</h2>
+  <div class="tools-grid">
 
-    <a href="https://airport-scavenger-hunt.vercel.app/" target="_blank" class="door door-1">
-      <div class="door-arch"></div>
-      <div class="door-knob"></div>
-      <div class="door-inner">
-        <div class="door-number">#1</div>
-        <div class="door-tag">For the traveller</div>
-        <div class="door-title">Airport Scavenger Hunt</div>
-        <p class="door-desc">Make layovers an adventure for curious kids and patient parents.</p>
-        <span class="door-btn">Enter</span>
+    <a href="https://airport-scavenger-hunt.vercel.app/" target="_blank" class="tool-card">
+      <img class="tool-card-img" src="YOUR_IMAGE_URL" alt="Airport Scavenger Hunt" />
+      <div class="tool-card-body">
+        <div class="tool-card-tag">For the traveller</div>
+        <div class="tool-card-name">Airport Scavenger Hunt</div>
+        <p class="tool-card-desc">Make layovers an adventure for curious kids and patient parents.</p>
+        <span class="tool-card-link">Check it out</span>
       </div>
     </a>
 
-    <a href="https://book-rating-tool.vercel.app/" target="_blank" class="door door-2">
-      <div class="door-arch"></div>
-      <div class="door-knob"></div>
-      <div class="door-inner">
-        <div class="door-number">#2</div>
-        <div class="door-tag">For the reader</div>
-        <div class="door-title">Book Review Tool</div>
-        <p class="door-desc">Not sure what to rate your last read? This'll help.</p>
-        <span class="door-btn">Enter</span>
+    <a href="https://book-rating-tool.vercel.app/" target="_blank" class="tool-card">
+      <img class="tool-card-img" src="YOUR_IMAGE_URL" alt="Book Review Tool" />
+      <div class="tool-card-body">
+        <div class="tool-card-tag">For the reader</div>
+        <div class="tool-card-name">Book Review Tool</div>
+        <p class="tool-card-desc">Rate your reads and create a beautiful, shareable card.</p>
+        <span class="tool-card-link">Get started</span>
       </div>
     </a>
 
-    <a href="https://tarot-card-reader-puce.vercel.app/" target="_blank" class="door door-3">
-      <div class="door-arch"></div>
-      <div class="door-knob"></div>
-      <div class="door-inner">
-        <div class="door-number">#3</div>
-        <div class="door-tag">For the mystic</div>
-        <div class="door-title">Tarot Card Reader</div>
-        <p class="door-desc">Get a message from the universe.</p>
-        <span class="door-btn">Enter</span>
+    <a href="https://tarot-card-reader-puce.vercel.app/" target="_blank" class="tool-card">
+      <img class="tool-card-img" src="YOUR_IMAGE_URL" alt="Tarot Card Reader" />
+      <div class="tool-card-body">
+        <div class="tool-card-tag">For the mystic</div>
+        <div class="tool-card-name">Tarot Card Reader</div>
+        <p class="tool-card-desc">Seek guidance. Let the cards speak.</p>
+        <span class="tool-card-link">Grab a card</span>
+      </div>
+    </a>
+
+    <a href="#" target="_blank" class="tool-card">
+      <img class="tool-card-img" src="YOUR_IMAGE_URL" alt="Coming Soon" />
+      <div class="tool-card-body">
+        <div class="tool-card-tag">Coming soon</div>
+        <div class="tool-card-name">Something New</div>
+        <p class="tool-card-desc">Another surprise is on its way.</p>
+        <span class="tool-card-link">Coming Soon</span>
       </div>
     </a>
 
