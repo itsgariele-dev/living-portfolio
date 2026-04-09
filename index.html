@@ -94,8 +94,8 @@ nav { position:fixed; top:0; left:0; right:0; z-index:400; background:var(--lave
 .zone-img { display:none; }
   .travel-section { grid-template-columns:1fr; }
   .travel-sticky { position:relative; top:auto; height:auto; padding:48px 28px 36px; border-right:none; border-bottom:2px solid var(--dark); }
-  .travel-river-wrap { padding:0; }
-  .guides-scroll-wrap { height:420px; }
+.travel-river-wrap { padding:40px; overflow:hidden; width:100%; }
+.guides-scroll-wrap { overflow-x:auto; scrollbar-width:none; height:500px; width:100%; -webkit-mask:linear-gradient(to right, transparent 0%, black 4%, black 94%, transparent 100%); mask:linear-gradient(to right, transparent 0%, black 4%, black 94%, transparent 100%); }
   .guides-row { padding:8px 24px; }
 }
   }
