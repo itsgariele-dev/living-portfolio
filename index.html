@@ -210,6 +210,9 @@ nav { position:fixed; top:0; left:0; right:0; z-index:400; background:var(--lave
 .about-sticky {
   position: sticky;
   top: 80px;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: end;
 }
 
 .about-photo {
@@ -218,6 +221,34 @@ nav { position:fixed; top:0; left:0; right:0; z-index:400; background:var(--lave
   object-fit: cover;
   object-position: top;
   display: block;
+  border: 2px solid var(--dark);
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.about-photo-secondary {
+  width: 140px;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border: 2px solid var(--dark);
+  grid-column: 1 / 3;
+  grid-row: 1;
+  align-self: end;
+  z-index: 2;
+  position: relative;
+  margin-bottom: 32px;
+  transform: rotate(-2deg);
+}
+
+.timeline-year {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: var(--accent);
+  padding-top: 4px;
 }
 
 .about-scroll { padding-top: 8px; }
@@ -469,9 +500,10 @@ footer { background:var(--lavender); border-top:2px solid var(--dark); color:var
 </section>
 <section class="about-section" id="about">
   <div class="about-inner">
-    <div class="about-sticky">
-      <img id="aboutPhoto" src="" alt="Gariele" class="about-photo" />
-    </div>
+<div class="about-sticky">
+  <img id="aboutPhotoSecondary" src="" alt="Gariele" class="about-photo-secondary" />
+  <img id="aboutPhoto" src="" alt="Gariele" class="about-photo" />
+</div>
     <div class="about-scroll">
       <div class="about-header">
         <h1 id="aboutName" class="about-name"></h1>
@@ -574,6 +606,7 @@ document.getElementById('aboutPhoto').src = C.about.photoUrl;
 document.getElementById('aboutName').textContent = C.about.name;
 document.getElementById('aboutPronounce').textContent = C.about.pronunciation;
 document.getElementById('aboutCopy').textContent = C.about.bio;
+  document.getElementById('aboutPhotoSecondary').src = C.about.photoSecondaryUrl;
 
 // Timeline
 const timelineEl = document.getElementById('aboutTimeline');
