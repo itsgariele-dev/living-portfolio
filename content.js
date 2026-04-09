@@ -339,7 +339,6 @@ const CONTENT = {
   about: {
 about: {
   photoUrl: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me.jpg",
-  photoSecondaryUrl: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me.jpg",
     name: "Gariele",
     pronunciation: "[gary-elle]",
     bio: "I've spent a decade helping brands figure out who they are and how to say it — then I decided to build a few of my own. I shoot film and digital, travel with intention, invest in women-led companies early, and document all of it in the spaces between. This site is a living, breathing archive of the things I make, find, and give away. Take whatever you need.",
