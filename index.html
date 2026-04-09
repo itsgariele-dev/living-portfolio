@@ -153,9 +153,9 @@ nav { position:fixed; top:0; left:0; right:0; z-index:400; background:var(--lave
 .guide-pill-disabled { background:transparent; color:var(--lavender); border-color:rgba(230,227,247,.3); cursor:default; }
 .books-section { padding:88px 52px; background:var(--lavender); border-bottom:2px solid var(--dark); }
 .books-section .section-heading { color:var(--dark); }
-.books-scroll-outer { overflow-x:auto; scrollbar-width:none; margin-top:44px; -webkit-mask:linear-gradient(to right,black 88%,transparent 100%); mask:linear-gradient(to right,black 88%,transparent 100%); }
+.books-scroll-outer { overflow-x:auto; scrollbar-width:none; margin-top:44px; -webkit-mask:linear-gradient(to right, transparent 0%, black 4%, black 88%, transparent 100%); mask:linear-gradient(to right, transparent 0%, black 4%, black 88%, transparent 100%); }
 .books-scroll-outer::-webkit-scrollbar { display:none; }
-.books-row { display:flex; gap:28px; width:max-content; padding-bottom:8px; }
+.books-row { display:flex; gap:28px; width:max-content; padding-bottom:8px; padding-left:52px; padding-right:52px; }
 .book-card { width:185px; flex-shrink:0; display:flex; flex-direction:column; gap:10px; transition:transform .25s; }
 .book-card:hover { transform:translateY(-6px); }
 .book-cover-wrap { width:100%; aspect-ratio:2/3; border-radius:3px; overflow:hidden; box-shadow:4px 6px 24px rgba(74,43,60,.22); border:2px solid var(--dark); }
