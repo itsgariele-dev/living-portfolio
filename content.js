@@ -47,7 +47,6 @@ const CONTENT = {
       value: "Project Hail Mary — Andy Weir",
       link: "https://www.goodreads.com/book/show/54493401-project-hail-mary",
       linkHint: "Open on Goodreads →",
-      image: "https://covers.openlibrary.org/b/isbn/9780140434187-L.jpg",
       blurb: "The most fun I've had reading in years. Space science, zero pretension.",
     },
     {
@@ -55,7 +54,6 @@ const CONTENT = {
       value: "End of Beginning — Djo",
       link: "https://open.spotify.com/track/3qhlB30KknSejmIvZZLjOD",
       linkHint: "Listen on Spotify →",
-      image: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-4.jpg",
       blurb: "This song has lived in my head rent free for three months.",
     },
     {
@@ -63,7 +61,6 @@ const CONTENT = {
       value: "Survivor Season 50",
       link: "https://www.cbs.com/shows/survivor/",
       linkHint: "Watch on CBS →",
-      image: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-2.jpg",
       blurb: "The all-winners season I didn't know I needed. Genuinely unhinged.",
     },
     {
@@ -71,7 +68,6 @@ const CONTENT = {
       value: "How to code with Claude",
       link: "",
       linkHint: "",
-      image: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-3.jpg",
       blurb: "Turns out I'm a developer now. Didn't see that coming.",
     },
     {
@@ -79,7 +75,6 @@ const CONTENT = {
       value: "Tofino travel guide",
       link: "",
       linkHint: "",
-      image: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/Tofino.jpg",
       blurb: "Almost done. It's going to be the best one yet.",
     },
     {
@@ -87,7 +82,6 @@ const CONTENT = {
       value: "Sunny evenings on the boat",
       link: "",
       linkHint: "",
-      image: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/Victoria.jpg",
       blurb: "Golden hour on the water. Nothing beats it.",
     },
   ],
