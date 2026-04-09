@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@600;700&display=swap" rel="stylesheet">
-<script src="content.js"></script>
+<script src="content.js"></script>.books-row { display:flex; gap:28px; width:max-content; padding-bottom:8px; padding-left:52px; padding-right:52px; }womp
 <style>
 :root {
   --dark: #4a2b3c;
@@ -397,7 +397,7 @@ C.currently.forEach(item => {
 });
 // Two Truths
 C.truths.cards.forEach((s,i) => {
-  document.getElementById('ttlCards').innerHTML += `<div class="truth-card" id="card-${i}"><span class="truth-number">0${i+1}</span><p class="truth-statement">${s}</p><button class="truth-btn" onclick="handleTruth(${i})">This is true</button><span class="truth-result" id="result-${i}"></span></div>`;
+  document.getElementById('ttlCards').innerHTML += `<div class="truth-card" id="card-${i}"><span class="truth-number">0${i+1}</span><p class="truth-statement">${s}</p><button class="truth-btn" onclick="handleTruth(${i})">You're lying.</button><span class="truth-result" id="result-${i}"></span></div>`;
 });
 const lb=C.truths.lightbox;
 document.getElementById('lightboxImg').src=lb.image;
