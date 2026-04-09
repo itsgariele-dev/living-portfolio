@@ -368,14 +368,20 @@ footer { background:var(--lavender); border-top:2px solid var(--dark); color:var
   <div class="tools-grid" id="toolsGrid"></div>
 </section>
 <section class="about-section" id="about">
-  <div class="about-top">
-    <div class="about-photo"><img id="aboutPhoto" alt="Gariele Wright"></div>
-    <div class="about-bio">
-      <div><h2 class="about-name" id="aboutName"></h2><span class="about-pronounce" id="aboutPronounce"></span></div>
-      <div class="about-roles" id="aboutRoles"></div>
-      <p class="about-copy" id="aboutCopy"></p>
+  <div class="about-inner">
+
+    <div class="about-sticky">
+      <img id="aboutPhoto" src="" alt="Gariele" class="about-photo" />
     </div>
-  </div>
+
+    <div class="about-scroll">
+      <div class="about-header">
+        <h1 id="aboutName" class="about-name"></h1>
+        <span id="aboutPronounce" class="about-pronounce"></span>
+      </div>
+      <p id="aboutCopy" class="about-bio"></p>
+      <div id="aboutTimeline" class="about-timeline"></div>
+    </div>
   <div class="genius-section">
     <span class="genius-eyebrow">Zones of Genius</span>
     <h2 class="genius-heading">What I actually do.</h2>
