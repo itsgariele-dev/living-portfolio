@@ -352,43 +352,36 @@ const CONTENT = {
     bio: "I've spent a decade helping brands figure out who they are and how to say it — then I decided to build a few of my own. I shoot film and digital, travel with intention, invest in women-led companies early, and document all of it in the spaces between. This site is a living, breathing archive of the things I make, find, and give away. Take whatever you need.",
 
     // Zones of genius
-    // hoverImageUrl: image that appears subtly on hover — use your work photos
     zones: [
       {
         label: "01 — Strategy",
         title: "Brand Strategy & Positioning",
         description: "Helping founders articulate who they are, who they're for, and why it matters. Psychology-led. Results-focused.",
-        hoverImageUrl: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/Copenhagen.jpg",
       },
       {
         label: "02 — Photography",
         title: "Travel & Lifestyle Photography",
         description: "Film and digital. Coastal, editorial, and everything in between. Available for print — see the shop.",
-        hoverImageUrl: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-1.jpg",
       },
       {
         label: "03 — Experience Design",
         title: "Digital Products & Tools",
         description: "I build things — travel guides, interactive tools, apps — that solve real problems and feel good to use.",
-        hoverImageUrl: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/Gothenburg.jpg",
       },
       {
         label: "04 — Investment",
         title: "Angel Investing",
         description: "I bet on women early. In brands, in businesses, in ideas that haven't been told they're viable yet.",
-        hoverImageUrl: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/Edinburgh.jpg",
       },
       {
         label: "05 — Writing",
         title: "Books & Book Reviews",
         description: "Dark fiction, speculative horror, literary grief. I review on Substack and Fable. Occasionally I write my own things.",
-        hoverImageUrl: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/Victoria.jpg",
       },
       {
         label: "06 — Travel",
         title: "Slow Travel & City Guides",
         description: "I travel with intention and over-research every destination. The guides are free. You're welcome.",
-        hoverImageUrl: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/Dublin.jpg",
       },
     ],
   },
