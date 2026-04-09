@@ -357,8 +357,12 @@ footer { background:var(--lavender); border-top:2px solid var(--dark); color:var
   .travel-river-wrap { padding: 40px; overflow: hidden; width: 100%; }
 }
   .guides-scroll-wrap { height:auto; overflow-y:visible; }
-  .guide-card { grid-template-columns:120px 1fr; }
-  .guide-card img { width:120px; height:140px; }
+@media (max-width: 900px) {
+  .guide-card { flex-direction: column; }
+  .guide-card img { width: 100%; aspect-ratio: 3/2; height: auto; }
+  .guide-card-city { font-size: 24px; }
+  .guide-card-info { padding: 16px 18px 20px; }
+}
 }
 @media (max-width:768px) {
   nav{padding:0 20px;} .hero{padding:80px 20px;}
