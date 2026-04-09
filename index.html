@@ -587,6 +587,16 @@ C.about.timeline.forEach(entry => {
       </div>
     </div>`;
 });
+
+  // Zones of Genius
+C.zones.forEach(z => {
+  document.getElementById('geniusGrid').innerHTML += `
+    <div class="genius-zone">
+      <span class="genius-zone-label">${z.label}</span>
+      <div class="genius-zone-title">${z.title}</div>
+      <p class="genius-zone-desc">${z.description}</p>
+    </div>`;
+});
 // Find Me
 C.findMe.forEach(f => { document.getElementById('findmeLinks').innerHTML += `<a href="${f.url}" target="_blank" class="findme-link">${f.label}</a>`; });
 // Cursor
