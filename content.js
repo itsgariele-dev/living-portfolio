@@ -335,80 +335,30 @@ const CONTENT = {
     ],
   },
 
-  // ── ABOUT / BIO ───────────────────────────────────────────
-about: {
-  photoUrl: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me.jpg",
-  name: "Gariele",
-  pronunciation: "[gary-elle]",
-  bio: "I've spent a decade helping brands figure out who they are and how to say it — then I decided to build a few of my own. I shoot film and digital, travel with intention, invest in women-led companies early, and document all of it in the spaces between. This site is a living, breathing archive of the things I make, find, and give away. Take whatever you need.",
-  timeline: [
-    {
-      year: "2013",
-      title: "First brand, first client, first panic attack",
-      story: "Went freelance at 22 with one client and a lot of confidence I hadn't earned yet. Somehow it worked."
-    },
-    {
-      year: "2016",
-      title: "Picked up a film camera",
-      story: "Bought a secondhand Minolta at a market in Edinburgh. Started shooting everything. Never really stopped."
-    },
-    {
-      year: "2018",
-      title: "Built the first company",
-      story: "Co-founded a brand studio. Learned more about people, money, and myself than any course could have taught."
-    },
-    {
-      year: "2020",
-      title: "Went slow on purpose",
-      story: "Sold my stuff, traveled slower, took less. Started writing things down. Tofino changed something."
-    },
-    {
-      year: "2022",
-      title: "Started betting on women",
-      story: "Made my first angel investment. Realized this was the work I'd been doing informally for years — just now with a cheque."
-    },
-    {
-      year: "2024",
-      title: "Built this",
-      story: "Stopped waiting for a 'real' portfolio moment. Started treating my own life like a brief worth designing."
-    },
-  ],
-},
-
-    // Zones of genius
-    zones: [
-      {
-        label: "01 — Strategy",
-        title: "Brand Strategy & Positioning",
-        description: "Helping founders articulate who they are, who they're for, and why it matters. Psychology-led. Results-focused.",
-      },
-      {
-        label: "02 — Photography",
-        title: "Travel & Lifestyle Photography",
-        description: "Film and digital. Coastal, editorial, and everything in between. Available for print — see the shop.",
-      },
-      {
-        label: "03 — Experience Design",
-        title: "Digital Products & Tools",
-        description: "I build things — travel guides, interactive tools, apps — that solve real problems and feel good to use.",
-      },
-      {
-        label: "04 — Investment",
-        title: "Angel Investing",
-        description: "I bet on women early. In brands, in businesses, in ideas that haven't been told they're viable yet.",
-      },
-      {
-        label: "05 — Writing",
-        title: "Books & Book Reviews",
-        description: "Dark fiction, speculative horror, literary grief. I review on Substack and Fable. Occasionally I write my own things.",
-      },
-      {
-        label: "06 — Travel",
-        title: "Slow Travel & City Guides",
-        description: "I travel with intention and over-research every destination. The guides are free. You're welcome.",
-      },
+// ── ABOUT / BIO ───────────────────────────────────────────
+  about: {
+    photoUrl: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me.jpg",
+    name: "Gariele",
+    pronunciation: "[gary-elle]",
+    bio: "I've spent a decade helping brands figure out who they are and how to say it — then I decided to build a few of my own. I shoot film and digital, travel with intention, invest in women-led companies early, and document all of it in the spaces between. This site is a living, breathing archive of the things I make, find, and give away. Take whatever you need.",
+    timeline: [
+      { year: "2013", title: "First brand, first client, first panic attack", story: "Went freelance at 22 with one client and a lot of confidence I hadn't earned yet. Somehow it worked." },
+      { year: "2016", title: "Picked up a film camera", story: "Bought a secondhand Minolta at a market in Edinburgh. Started shooting everything. Never really stopped." },
+      { year: "2018", title: "Built the first company", story: "Co-founded a brand studio. Learned more about people, money, and myself than any course could have taught." },
+      { year: "2020", title: "Went slow on purpose", story: "Sold my stuff, traveled slower, took less. Started writing things down. Tofino changed something." },
+      { year: "2022", title: "Started betting on women", story: "Made my first angel investment. Realized this was the work I'd been doing informally for years — just now with a cheque." },
+      { year: "2024", title: "Built this", story: "Stopped waiting for a 'real' portfolio moment. Started treating my own life like a brief worth designing." },
     ],
   },
+  // ── ZONES OF GENIUS ───────────────────────────────────────
+  zones: [
+    { label: "01 — Strategy", title: "Brand Strategy & Positioning", description: "Helping founders articulate who they are, who they're for, and why it matters. Psychology-led. Results-focused." },
+    { label: "02 — Photography", title: "Travel & Lifestyle Photography", description: "Film and digital. Coastal, editorial, and everything in between. Available for print — see the shop." },
+    { label: "03 — Experience Design", title: "Digital Products & Tools", description: "I build things — travel guides, interactive tools, apps — that solve real problems and feel good to use." },
+    { label: "04 — Investment", title: "Angel Investing", description: "I bet on women early. In brands, in businesses, in ideas that haven't been told they're viable yet." },
+    { label: "05 — Writing", title: "Books & Book Reviews", description: "Dark fiction, speculative horror, literary grief. I review on Substack and Fable. Occasionally I write my own things." },
+    { label: "06 — Travel", title: "Slow Travel & City Guides", description: "I travel with intention and over-research every destination. The guides are free. You're welcome." },
+  ],
 
   // ── FIND ME ───────────────────────────────────────────────
   findMe: [
