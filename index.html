@@ -24,13 +24,12 @@ html { scroll-behavior:smooth; }
 body { background:var(--cream); color:var(--dark); font-family:var(--sans); overflow-x:hidden; font-size:14px; line-height:1.6; }
 @media (hover:hover) and (pointer:fine) {
   body { cursor:none; }
-  a, button, .zone, .truth-card, .photo-strip-img, .genius-zone { cursor:none; }
+  a, button, .zone, .truth-card, .photo-strip-img, .genius-zone { cursor:default; }
   .cursor { display:block; width:20px; height:20px; border-radius:50%; background:#000; border:3px solid var(--accent); position:fixed; top:0; left:0; pointer-events:none; z-index:9999; transform:translate(-50%,-50%); transition:width .15s, height .15s, background .15s; will-change:transform; }
-  .cursor.hovering { width:32px; height:32px; background:var(--accent); border-color:#000; }
 }
 nav { position:fixed; top:0; left:0; right:0; z-index:400; background:var(--lavender); border-bottom:2px solid var(--dark); display:flex; align-items:center; justify-content:space-between; padding:0 48px; height:56px; }
 .nav-logo { font-family:var(--mono); font-size:16px; font-weight:700; color:var(--dark); text-decoration:none; text-transform:uppercase; letter-spacing:.06em; }
-.nav-hamburger { display:flex; align-items:center; background:none; border:none; padding:8px; cursor:pointer; }
+.nav-hamburger { display:flex; align-items:center; background:none; border:none; padding:8px; cursor:default; }
 .hamburger-lines { display:flex; flex-direction:column; gap:5px; }
 .hamburger-lines span { display:block; width:22px; height:2px; background:var(--dark); transition:transform .25s, opacity .25s; }
 .nav-hamburger.open .hamburger-lines span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
