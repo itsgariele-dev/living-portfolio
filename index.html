@@ -43,25 +43,19 @@ nav { position:fixed; top:0; left:0; right:0; z-index:400; background:var(--lave
 .menu-link:hover { padding-left:12px; letter-spacing:.5em; }
 .menu-dim { position:fixed; inset:0; z-index:340; background:rgba(74,43,60,.35); opacity:0; pointer-events:none; transition:opacity .35s; }
 .menu-dim.open { opacity:1; pointer-events:all; }
-.hero { background:var(--dark); min-height:100vh; position:relative; display:flex; align-items:center; justify-content:center; overflow:hidden; padding:140px 60px 120px; margin-top:56px; }
-.hero-img { position:absolute; border-radius:4px; overflow:hidden; box-shadow:0 12px 48px rgba(0,0,0,.5); pointer-events:none; }
-.hero-img img { width:100%; height:100%; object-fit:cover; display:block; }
-.hi-1{width:210px;height:290px;top:4%;left:2%;transform:rotate(-4deg);}
-.hi-2{width:155px;height:210px;top:55%;left:0%;transform:rotate(2.5deg);}
-.hi-3{width:185px;height:255px;top:16%;left:17%;transform:rotate(1.5deg);}
-.hi-4{width:235px;height:175px;bottom:6%;left:9%;transform:rotate(-1.5deg);}
-.hi-5{width:175px;height:235px;top:4%;right:2%;transform:rotate(3.5deg);}
-.hi-6{width:195px;height:280px;top:42%;right:0%;transform:rotate(-2.5deg);}
-.hi-7{width:165px;height:195px;top:12%;right:19%;transform:rotate(1deg);}
-.hi-8{width:215px;height:155px;bottom:4%;right:7%;transform:rotate(-2deg);}
-.hero-center { position:relative; z-index:10; text-align:center; max-width:900px; display:flex; flex-direction:column; align-items:center; }
-.hero-kicker { font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.25em; text-transform:uppercase; color:var(--accent); display:block; margin-bottom:32px; }
-.hero-headline { font-family:var(--serif); font-size:clamp(64px,10vw,140px); line-height:.92; color:var(--light); font-weight:400; text-align:center; text-transform:uppercase; letter-spacing:-.01em; }
-.hero-headline .hl { color:var(--accent); }
-.hero-sub { font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--lavender); margin-top:36px; margin-bottom:44px; }
-.hero-pills { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
-.hero-pill { font-family:var(--mono); font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; background:var(--accent); color:var(--dark); padding:10px 22px; border-radius:20px; text-decoration:none; border:2px solid var(--accent); transition:background .15s, color .15s; }
-.hero-pill:hover { background:var(--dark); color:var(--accent); border-color:var(--accent); }
+.hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 100vh; margin-top: 56px; }
+.hero-left { position: relative; overflow: hidden; min-height: 100vh; }
+.hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-cutout { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); height: 90%; width: auto; object-fit: contain; object-position: bottom; z-index: 2; }
+.hero-right { background: var(--light); display: flex; align-items: center; justify-content: center; padding: 60px 48px; }
+.hero-panel { background: var(--dark); border-radius: 24px; padding: 52px; max-width: 480px; width: 100%; text-align: center; }
+.hero-name { font-family: var(--serif); font-weight: 400; font-style: normal; font-size: clamp(60px, 8vw, 120px); letter-spacing: 0.06em; text-transform: uppercase; color: var(--lavender); line-height: 1; margin-bottom: 14px; }
+.hero-def-pos { font-family: var(--mono); font-size: 14px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 32px; }
+.hero-def-text { font-family: var(--sans); font-size: 16px; line-height: 1.6; color: var(--light); font-weight: 400; margin-bottom: 28px; }
+.hero-divider { width: 36px; height: 2px; background: var(--accent); margin: 0 auto 28px; }
+.hero-links { display: flex; flex-wrap: wrap; gap: 10px 20px; justify-content: center; }
+.hero-links a { font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--lavender); text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; transition: color 0.15s; }
+.hero-links a:hover { color: var(--accent); }
 .ticker { background:var(--lavender); border-top:2px solid var(--dark); border-bottom:2px solid var(--dark); padding:12px 0; overflow:hidden; white-space:nowrap; }
 .ticker-track { display:inline-flex; align-items:center; animation:ticker 38s linear infinite; }
 .ticker-track a { font-family:var(--mono); font-size:13px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--dark); padding:0 24px; text-decoration:none; border-bottom:2px solid transparent; transition:border-color .15s; }
@@ -365,9 +359,13 @@ footer { background:var(--lavender); border-top:2px solid var(--dark); color:var
 }
 }
 @media (max-width:768px) {
-  nav{padding:0 20px;} .hero{padding:80px 20px;}
-  .hi-1,.hi-2,.hi-3,.hi-4{display:none;}
-  .hi-5{width:110px;height:150px;top:5%;right:3%;} .hi-6{width:120px;height:170px;bottom:10%;right:1%;} .hi-7{width:100px;height:130px;top:8%;left:2%;} .hi-8{width:120px;height:95px;bottom:5%;left:4%;}
+  nav{padding:0 20px;}
+  .hero{padding:80px 20px;}
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero-left { min-height: 65vw; }
+  .hero-right { padding: 40px 24px 60px; }
+  .hero-panel { padding: 40px 28px; }
+  .hero-name { font-size: clamp(52px, 16vw, 80px); }
   .photos-section,.books-section,.tools-section,.findme-section,.ttl-section,.genius-section{padding:64px 24px;}
   .tools-grid{grid-template-columns:repeat(2,1fr);} .genius-grid{grid-template-columns:1fr 1fr;}
   .photo-strip-img:nth-child(n+3){display:none;} footer{padding:28px 24px;flex-direction:column;align-items:flex-start;gap:10px;} .menu-overlay{width:92%;}
@@ -411,23 +409,24 @@ footer { background:var(--lavender); border-top:2px solid var(--dark); color:var
   </button>
 </nav>
 <section class="hero">
-  <div class="hero-img hi-1"><img id="hi1" alt=""></div>
-  <div class="hero-img hi-2"><img id="hi2" alt=""></div>
-  <div class="hero-img hi-3"><img id="hi3" alt=""></div>
-  <div class="hero-img hi-4"><img id="hi4" alt=""></div>
-  <div class="hero-img hi-5"><img id="hi5" alt=""></div>
-  <div class="hero-img hi-6"><img id="hi6" alt=""></div>
-  <div class="hero-img hi-7"><img id="hi7" alt=""></div>
-  <div class="hero-img hi-8"><img id="hi8" alt=""></div>
-  <div class="hero-center">
-    <span class="hero-kicker" id="heroKicker"></span>
-    <h1 class="hero-headline">A COZY CORNER<br>OF THE INTERNET<br>WHERE YOU CAN<br>TAKE WHATEVER<br>YOU <span class="hl">NEED.</span></h1>
-    <p class="hero-sub" id="heroSub"></p>
-    <div class="hero-pills">
-      <a href="#photos" class="hero-pill">Wallpapers</a>
-      <a href="#travel" class="hero-pill">Travel Guides</a>
-      <a href="#books" class="hero-pill">Books</a>
-      <a href="#tools" class="hero-pill">Surprises</a>
+  <div class="hero-left">
+    <img class="hero-bg" src="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/background-desktop-wallpaper.jpg" alt="" />
+    <img class="hero-cutout" src="https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/plane.png" alt="Gariele" />
+  </div>
+  <div class="hero-right">
+    <div class="hero-panel">
+      <h1 class="hero-name">Gariele</h1>
+      <span class="hero-def-pos">noun &nbsp;/&nbsp; gary-elle</span>
+      <p class="hero-def-text">A chronically-obsessive side quest collector, serial builder of things nobody asked for, on a slow but inevitable mission to take over the digital world.</p>
+      <div class="hero-divider"></div>
+      <nav class="hero-links">
+        <a href="#travel">Travel Guides</a>
+        <a href="#books">Books</a>
+        <a href="#tools">Tools</a>
+        <a href="#photos">Wallpapers</a>
+        <a href="#about">About</a>
+        <a href="#currently">What I'm Up To</a>
+      </nav>
     </div>
   </div>
 </section>
