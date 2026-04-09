@@ -336,20 +336,44 @@ const CONTENT = {
   },
 
   // ── ABOUT / BIO ───────────────────────────────────────────
-  about: {
-    // Main bio photo — swap for a new image any time
-    photoUrl: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me.jpg",
-    name: "Gariele",
-    pronunciation: "[gary-elle]",
-    roles: [
-      "Creative Director",
-      "Brand Builder",
-      "Photographer",
-      "3x Business Owner",
-      "Angel Investor",
-      "Side Quest Collector",
-    ],
-    bio: "I've spent a decade helping brands figure out who they are and how to say it — then I decided to build a few of my own. I shoot film and digital, travel with intention, invest in women-led companies early, and document all of it in the spaces between. This site is a living, breathing archive of the things I make, find, and give away. Take whatever you need.",
+about: {
+  photoUrl: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me.jpg",
+  name: "Gariele",
+  pronunciation: "[gary-elle]",
+  bio: "I've spent a decade helping brands figure out who they are and how to say it — then I decided to build a few of my own. I shoot film and digital, travel with intention, invest in women-led companies early, and document all of it in the spaces between. This site is a living, breathing archive of the things I make, find, and give away. Take whatever you need.",
+  timeline: [
+    {
+      year: "2013",
+      title: "First brand, first client, first panic attack",
+      story: "Went freelance at 22 with one client and a lot of confidence I hadn't earned yet. Somehow it worked."
+    },
+    {
+      year: "2016",
+      title: "Picked up a film camera",
+      story: "Bought a secondhand Minolta at a market in Edinburgh. Started shooting everything. Never really stopped."
+    },
+    {
+      year: "2018",
+      title: "Built the first company",
+      story: "Co-founded a brand studio. Learned more about people, money, and myself than any course could have taught."
+    },
+    {
+      year: "2020",
+      title: "Went slow on purpose",
+      story: "Sold my stuff, traveled slower, took less. Started writing things down. Tofino changed something."
+    },
+    {
+      year: "2022",
+      title: "Started betting on women",
+      story: "Made my first angel investment. Realized this was the work I'd been doing informally for years — just now with a cheque."
+    },
+    {
+      year: "2024",
+      title: "Built this",
+      story: "Stopped waiting for a 'real' portfolio moment. Started treating my own life like a brief worth designing."
+    },
+  ],
+},
 
     // Zones of genius
     zones: [
