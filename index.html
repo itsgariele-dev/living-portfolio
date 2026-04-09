@@ -466,8 +466,19 @@ document.getElementById('aboutPhoto').src = C.about.photoUrl;
 document.getElementById('aboutName').textContent = C.about.name;
 document.getElementById('aboutPronounce').textContent = C.about.pronunciation;
 document.getElementById('aboutCopy').textContent = C.about.bio;
-C.about.roles.forEach(r => { document.getElementById('aboutRoles').innerHTML += `<span class="about-role">${r}</span>`; });
-C.about.zones.forEach(z => { document.getElementById('geniusGrid').innerHTML += `<div class="genius-zone"><img class="genius-zone-img" src="${z.hoverImageUrl}" alt=""><span class="genius-zone-label">${z.label}</span><div class="genius-zone-title">${z.title}</div><p class="genius-zone-desc">${z.description}</p></div>`; });
+
+// Timeline
+const timelineEl = document.getElementById('aboutTimeline');
+C.about.timeline.forEach(entry => {
+  timelineEl.innerHTML += `
+    <div class="timeline-entry">
+      <span class="timeline-year">${entry.year}</span>
+      <div class="timeline-body">
+        <div class="timeline-title">${entry.title}</div>
+        <p class="timeline-story">${entry.story}</p>
+      </div>
+    </div>`;
+});
 // Find Me
 C.findMe.forEach(f => { document.getElementById('findmeLinks').innerHTML += `<a href="${f.url}" target="_blank" class="findme-link">${f.label}</a>`; });
 // Cursor
