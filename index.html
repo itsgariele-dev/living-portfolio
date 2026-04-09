@@ -442,7 +442,7 @@ document.getElementById('wallpaperHeading').textContent = C.wallpapers.subheadin
 document.getElementById('printShopLink').href = C.wallpapers.printShopUrl;
 C.wallpapers.items.forEach(w => { document.getElementById('photosRow').innerHTML += `<div class="photo-card"><img src="${w.imageUrl}" alt="${w.title}"><div class="photo-card-info"><p class="photo-card-title">${w.title}</p><p class="photo-card-blurb">${w.blurb}</p><a href="${w.downloadUrl}" download class="photo-card-dl">Download</a></div></div>`; });
 // Travel
-document.getElementById('travelHeading').textContent = C.travel.subheading;
+// document.getElementById('travelHeading').textContent = C.travel.subheading;
 C.travel.guides.forEach(g => {
   const pill = g.comingSoon ? `<span class="guide-pill guide-pill-disabled">Coming Soon</span>` : `<a href="${g.guideUrl}" target="_blank" class="guide-pill">Get the guide</a>`;
   document.getElementById('guidesRow').innerHTML += `<div class="guide-card"><img src="${g.imageUrl}" alt="${g.city}"><div class="guide-card-info"><div class="guide-card-city">${g.city}</div><p class="guide-card-desc">${g.description}</p>${pill}</div></div>`;
