@@ -136,31 +136,6 @@
   position: relative;
 }
 
-.panel-glyph {
-  position: absolute;
-  font-size: 42px;
-  color: var(--accent);
-  line-height: 1;
-  animation: glyph-pulse 3s ease-in-out infinite;
-  pointer-events: none;
-  user-select: none;
-}
-
-.panel-glyph--tl {
-  top: -12px;
-  left: -12px;
-}
-
-.panel-glyph--br {
-  bottom: -12px;
-  right: -12px;
-}
-
-@keyframes glyph-pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(0.82); }
-}
-
   /* ── MOBILE ── */
   @media (max-width: 768px) {
     .hero {
@@ -199,14 +174,6 @@
   alt="Gariele"
 />
   </div>
-
-  <div class="hero-panel">
-  <span class="panel-glyph panel-glyph--tl">✦</span>
-
-  <!-- all your existing panel content stays here -->
-
-  <span class="panel-glyph panel-glyph--br">✦</span>
-</div>
 
   <div class="hero-right">
     <div class="hero-panel">
