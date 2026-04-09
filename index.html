@@ -28,7 +28,6 @@ body { background:var(--cream); color:var(--dark); font-family:var(--sans); over
   .cursor { display:none; width:20px; height:20px; border-radius:50%; background:#000; border:3px solid var(--accent); position:fixed; top:0; left:0; pointer-events:none; z-index:9999; transform:translate(-50%,-50%); transition:width .15s, height .15s, background .15s; will-change:transform; }
   .cursor.hovering { width:32px; height:32px; background:var(--accent); border-color:#000; }
 }
-.cursor { display:none; width:20px; height:20px; border-radius:50%; background:#000; border:3px solid var(--accent); position:fixed; top:0; left:0; pointer-events:none; z-index:9999; transform:translate(-50%,-50%); transition:width .2s, height .2s, background .2s; will-change:left,top; }
 nav { position:fixed; top:0; left:0; right:0; z-index:400; background:var(--lavender); border-bottom:2px solid var(--dark); display:flex; align-items:center; justify-content:space-between; padding:0 48px; height:56px; }
 .nav-logo { font-family:var(--mono); font-size:16px; font-weight:700; color:var(--dark); text-decoration:none; text-transform:uppercase; letter-spacing:.06em; }
 .nav-hamburger { display:flex; align-items:center; background:none; border:none; padding:8px; cursor:pointer; }
@@ -441,7 +440,9 @@ C.findMe.forEach(f => { document.getElementById('findmeLinks').innerHTML += `<a 
 // Cursor
 const cursor=document.getElementById('cursor');
 if(window.matchMedia('(hover:hover) and (pointer:fine)').matches){
-  document.addEventListener('mousemove',e=>{cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px';});
+  document.addEventListener('mousemove',e=>{
+    cursor.style.transform=`translate(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%))`;
+  });
   document.querySelectorAll('a,button,.zone,.truth-card,.photo-strip-img,.genius-zone').forEach(el=>{el.addEventListener('mouseenter',()=>cursor.classList.add('hovering'));el.addEventListener('mouseleave',()=>cursor.classList.remove('hovering'));});
 }
 // Menu
