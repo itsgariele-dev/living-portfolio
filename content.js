@@ -19,7 +19,7 @@ const CONTENT = {
   // The 8 scattered background images. Swap any URL to refresh the collage.
   hero: {
     kicker: "Gariele Wright ✦ Victoria, BC",
-    sub: "Photographer. Strategist. Perpetual side quest.",
+    sub: "Creative Strategist on Perpetual Side Quests",
     images: [
       "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/Copenhagen.jpg",
       "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-4.jpg",
@@ -83,15 +83,15 @@ const CONTENT = {
   truths: {
     lieIndex: 1,
     cards: [
-      "I once got stranded overnight in a European airport with nothing but a carry-on and a half-read novel.",
-      "I've been a yoga teacher, a brand strategist, a content creator, and an angel investor — not necessarily in that order.",
-      "I have a half-finished memoir that exactly three people have read, and I have no plans to finish it.",
+      "I once bumped into Jude Law wearing pajamas on the streets of Notting Hill in London.",
+      "I have a degree in psychology but briefly considered going to school for marine biology.",
+      "I was born and raised in Trinidad and Tobago - even lived on a sailboat for one year.",
     ],
     lightbox: {
       image: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me.jpg",
-      tag: "You got it.",
+      tag: "You know me too well.",
       headline: "That's the lie. 🎉",
-      copy: "Update this with the real story — what actually happened, why this one isn't true, the fun version of events. This is your moment.",
+      copy: "I actually studied Marketing but dropped out when I started my first business. My professors even used me as a case study after I left!",
     },
   },
 
