@@ -73,45 +73,15 @@ nav { position:fixed; top:0; left:0; right:0; z-index:400; background:var(--lave
 .currently-sticky .eyebrow { font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--dark); margin-bottom:20px; display:block; }
 .currently-sticky h2 { font-family:var(--serif); font-size:36px; line-height:1.1; color:var(--dark); font-weight:400; margin-bottom:20px; }
 .currently-sticky p { font-family:var(--mono); font-size:14px; font-weight:600; line-height:1.7; color:var(--dark); }
-.currently-items { padding:40px 52px; display:flex; flex-direction:column; gap:16px; align-content:start; }
-.zone {
-  display:grid; grid-template-columns:120px 1fr;
-  border:2px solid var(--accent); border-radius:8px;
-  background:#fff; text-decoration:none; color:var(--dark);
-  overflow:hidden; transition:background .15s, transform .15s;
-  min-height:120px;
-}
+.currently-items { padding:52px; display:grid; grid-template-columns:1fr 1fr; gap:12px; align-content:start; }
+.zone { display:flex; flex-direction:column; gap:8px; border:2px solid var(--accent); border-radius:8px; padding:18px 20px; background:#fff; text-decoration:none; color:var(--dark); transition:background .15s, transform .15s; }
 .zone:hover { background:var(--accent); transform:translateY(-3px); }
-.zone-img {
-  width:120px; height:100%; min-height:120px;
-  object-fit:cover; display:block; flex-shrink:0;
-}
-.zone-text {
-  display:flex; flex-direction:column; justify-content:center;
-  gap:6px; padding:18px 20px;
-}
-.zone-label {
-  font-family:var(--mono); font-size:11px; font-weight:700;
-  letter-spacing:.16em; text-transform:uppercase; color:var(--dark);
-}
-.zone-value {
-  font-family:var(--sans); font-size:14px; font-weight:600;
-  line-height:1.4; color:var(--dark);
-}
-.zone-blurb {
-  font-family:var(--sans); font-size:13px; line-height:1.5;
-  color:var(--dark);
-}
-.zone-pill {
-  display:inline-flex; align-self:flex-start;
-  background:var(--accent); color:var(--dark);
-  font-family:var(--mono); font-size:11px; font-weight:700;
-  letter-spacing:.1em; text-transform:uppercase;
-  padding:6px 14px; border-radius:20px;
-  border:2px solid var(--dark); margin-top:4px;
-  text-decoration:none;
-}
-.zone:hover .zone-pill { background:var(--dark); color:var(--accent); border-color:var(--dark); }
+.zone-label { font-family:var(--mono); font-size:11px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--dark); }
+.zone-value { font-family:var(--sans); font-size:14px; font-weight:600; line-height:1.5; color:var(--dark); }
+.zone-blurb { font-family:var(--sans); font-size:13px; line-height:1.5; color:var(--dark); }
+.zone-pill { display:inline-flex; align-self:flex-start; background:var(--accent); color:var(--dark); font-family:var(--mono); font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; padding:6px 14px; border-radius:20px; border:2px solid var(--dark); margin-top:4px; text-decoration:none; }
+.zone:hover .zone-pill { background:var(--dark); color:var(--accent); }
+.zone.no-link .zone-pill { background:rgba(74,43,60,.06); color:var(--dark); border-color:rgba(74,43,60,.15); }
 .zone.no-link { cursor:default; }
 .zone.no-link:hover { transform:none; }
 .zone.no-link .zone-pill { background:rgba(74,43,60,.08); color:var(--dark); border-color:rgba(74,43,60,.2); cursor:default; }
@@ -434,16 +404,13 @@ C.currently.forEach(item => {
   el.className = 'zone'+(item.link?'':' no-link');
   if(item.link){el.href=item.link;el.target='_blank';}
   el.innerHTML = `
-    <img class="zone-img" src="${item.image}" alt="${item.label}">
-    <div class="zone-text">
-      <span class="zone-label">${item.label}</span>
-      <span class="zone-value">${item.value}</span>
-      ${item.blurb ? `<span class="zone-blurb">${item.blurb}</span>` : ''}
-      ${item.link && item.linkHint
-        ? `<a href="${item.link}" target="_blank" class="zone-pill">${item.linkHint}</a>`
-        : `<span class="zone-pill">${item.label} ✦</span>`
-      }
-    </div>
+    <span class="zone-label">${item.label}</span>
+    <span class="zone-value">${item.value}</span>
+    ${item.blurb?`<span class="zone-blurb">${item.blurb}</span>`:''}
+    ${item.link&&item.linkHint
+      ?`<a href="${item.link}" target="_blank" class="zone-pill">${item.linkHint}</a>`
+      :`<span class="zone-pill">${item.label} ✦</span>`
+    }
   `;
   ciEl.appendChild(el);
 });
