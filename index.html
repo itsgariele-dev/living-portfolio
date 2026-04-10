@@ -43,7 +43,7 @@ nav { display:none;}
 .menu-link:hover { padding-left:12px; letter-spacing:.5em; }
 .menu-dim { position:fixed; inset:0; z-index:340; background:rgba(74,43,60,.35); opacity:0; pointer-events:none; transition:opacity .35s; }
 .menu-dim.open { opacity:1; pointer-events:all; }
-.hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 100vh; margin-top: 56px; }
+.hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 100vh; margin-top: 0; }
 .hero-left { position: relative; overflow: hidden; min-height: 100vh; }
 .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .hero-cutout { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); height: 90%; width: auto; object-fit: contain; object-position: bottom; z-index: 2; }
@@ -360,7 +360,7 @@ footer { background:var(--lavender); border-top:2px solid var(--dark); color:var
   .nav-links-center { display:none; }
   .nav-hamburger { display:flex; }
  @media (max-width: 768px) {
-.hero { grid-template-columns: 1fr; min-height: auto; margin-top: 0px; }
+.hero { grid-template-columns: 1fr; min-height: auto; margin-top: 0; }
   .hero-left { min-height: 65vw; margin: 0; padding: 0; }
   .hero-bg { border-radius: 0; }
   .hero-right { padding: 40px 24px; min-height: auto; }
