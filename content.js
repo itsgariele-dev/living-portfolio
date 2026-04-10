@@ -54,19 +54,19 @@ const CONTENT = {
       blurb: "I don't care if this trended in 2021 - I'm still obsessed.",
     },
     {
-      label: "Creating",
-      value: "Tofino Travel Guide",
-      link: "#travel",
-      linkHint: "View My guides",
-      blurb: "Almost done, but check out my other ones until then!",
-    },
-    {
-      label: "Loving",
-      value: "Reviewing Books on Fable",
-      link: "https://fable.co/fabler/gariele-176872823907",
-      linkHint: "Read My Reviews",
-      blurb: "Especially advanced reader copies before the books are published.",
-    },
+  label: "Podcast",
+  value: "Love to See it — Scamanda",
+  link: "https://open.spotify.com/episode/00IHxifPxyXoDpN5QydggS?si=Uju2ChxiQXeCjKwUXVHCRA",
+  linkHint: "Listen on Spotify",
+  blurb: "Any Summer House fans? I'm catching up on the latest drama.",
+},
+{
+  label: "Wanting",
+  value: "Canon RF 100-400mm Lens",
+  link: "https://kerrisdalecameras.com/shop/canon-rf-100-400mm-f5-6-8-is-usm/aea46ea0-f571-0139-5a7d-00163ecd2826",
+  linkHint: "Someone buy me this",
+  blurb: "I promised myself I wouldn't collect more lenses. Oops.",
+},
   ],
 
   // ── TWO TRUTHS AND A LIE ───────────────────────────────────
