@@ -83,7 +83,7 @@ const CONTENT = {
       image: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me.jpg",
       tag: "You know me too well.",
       headline: "That's the lie. 🎉",
-      copy: "I actually studied Marketing but dropped out when I started my first business, Rad Girls Collective. My professors used it as a case study after I left!",
+      copy: "I actually studied Marketing but dropped out when I started my first business, Rad Girls Collective. Within two years, I grew the community to 100k+ followers and landed collabs with Lululemon and MEC.",
     },
   },
 
