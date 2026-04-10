@@ -67,20 +67,6 @@ const CONTENT = {
       linkHint: "Read My Reviews",
       blurb: "Especially advanced reader copies before the books are published.",
     },
-    {
-  label: "Podcast",
-  value: "Love to See it — Scamanda",
-  link: "https://open.spotify.com/episode/00IHxifPxyXoDpN5QydggS?si=Uju2ChxiQXeCjKwUXVHCRA",
-  linkHint: "Listen on Spotify",
-  blurb: "Any Summer House fans? I'm catching up on the latest drama.",
-},
-{
-  label: "Wanting",
-  value: "Canon RF 100-400mm Lens",
-  link: "https://kerrisdalecameras.com/shop/canon-rf-100-400mm-f5-6-8-is-usm/aea46ea0-f571-0139-5a7d-00163ecd2826",
-  linkHint: "Someone buy me this",
-  blurb: "I promised myself I wouldn't collect more lenses. Oops.",
-},
   ],
 
   // ── TWO TRUTHS AND A LIE ───────────────────────────────────
