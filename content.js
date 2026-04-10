@@ -249,7 +249,6 @@ const CONTENT = {
         reviewUrl: "https://booksbeneath.substack.com/p/a-twisted-story-of-revenge-told-through",
       },
       {
-      {
         title: "Ring Shout",
         author: "P. Djèlí Clark",
         stars: "★★★★☆",
