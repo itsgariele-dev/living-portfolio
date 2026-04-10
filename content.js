@@ -341,12 +341,12 @@ const CONTENT = {
   },
   // ── ZONES OF GENIUS ───────────────────────────────────────
   zones: [
-    { label: "01", title: "Brand Strategy & Positioning", description: "Helping founders get clear on who they are, who they're for, and why it matters. Rooted in psychology and human desires." },
-    { label: "02", title: "Lifestyle Photography", description: "Film and digital. Coastal, editorial, true-to-life imagery that makes you feel safe enough to exhale." },
-    { label: "03", title: "Creative Technology", description: "Digital solutions for : websites, tiny apps, projects that enhance user experience." },
-    { label: "04", title: "Graphic Design", description: "Visual identity that doesn't just look good — it means something. For brands that want to be remembered." },
+    { label: "01", title: "Brand Strategy & Positioning", description: "" },
+    { label: "02", title: "Lifestyle Photography", description: "" },
+    { label: "03", title: "Creative Technology", description: "" },
+    { label: "04", title: "Visual Design", description: "" },
     { label: "05", title: "Storytelling", description: "" },
-    { label: "06", title: "Mentoring", description: "Intuitive ability to spot what's missing and know exactly what to do about it. I back women with real stories solving real problems." },
+    { label: "06", title: "Mentoring", description: "" },
   ],
 
   // ── FIND ME ───────────────────────────────────────────────
