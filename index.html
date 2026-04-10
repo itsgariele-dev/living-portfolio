@@ -28,13 +28,13 @@ body { background:var(--cream); color:var(--dark); font-family:var(--sans); over
   .cursor { display:block; width:20px; height:20px; border-radius:50%; background:#000; border:3px solid var(--accent); position:fixed; top:0; left:0; pointer-events:none; z-index:9999; transform:translate(-50%,-50%); transition:width .15s, height .15s, background .15s; will-change:transform; }
 }
 nav { position:fixed; top:0; left:0; right:0; z-index:400; background:var(--dark); border-bottom:2px solid var(--dark); display:flex; align-items:center; justify-content:space-between; padding:0 48px; height:56px; }
-.nav-logo { font-family:var(--mono); font-size:16px; font-weight:700; color:var(--light); text-decoration:none; text-transform:uppercase; letter-spacing:.06em; }
-.nav-hamburger { display:flex; align-items:center; background:none; border:none; padding:8px; cursor:default; }
+.nav-logo { font-family:var(--mono); font-size:16px; font-weight:700; color:var(--light); text-decoration:none; text-transform:uppercase; letter-spacing:.06em; flex-shrink:0; }
+.nav-links-center { display:flex; gap:28px; align-items:center; position:absolute; left:50%; transform:translateX(-50%); }
+.nav-link { font-family:var(--mono); font-size:11px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--light); text-decoration:none; opacity:0.7; transition:opacity .15s; }
+.nav-link:hover { opacity:1; }
+.nav-hamburger { display:none; align-items:center; background:none; border:none; padding:8px; cursor:default; }
 .hamburger-lines { display:flex; flex-direction:column; gap:5px; }
 .hamburger-lines span { display:block; width:22px; height:2px; background:var(--light); transition:transform .25s, opacity .25s; }
-.nav-hamburger.open .hamburger-lines span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
-.nav-hamburger.open .hamburger-lines span:nth-child(2) { opacity:0; }
-.nav-hamburger.open .hamburger-lines span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
 .menu-overlay { position:fixed; top:56px; right:0; width:80%; max-width:560px; height:calc(100vh - 56px); background:var(--lavender); border-left:2px solid var(--dark); z-index:350; transform:translateX(100%); transition:transform .35s cubic-bezier(.77,0,.18,1); display:flex; align-items:center; justify-content:center; padding:0 52px; overflow:hidden; }
 .menu-overlay.open { transform:translateX(0); }
 .menu-links { display:flex; flex-direction:column; width:100%; border-bottom:none; }
@@ -360,6 +360,8 @@ footer { background:var(--lavender); border-top:2px solid var(--dark); color:var
 }
 @media (max-width:768px) {
   nav{padding:0 20px;}
+    .nav-links-center { display:none; }
+  .nav-hamburger { display:flex; }
   .hero{padding:80px 20px;}
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .hero-left { min-height: 65vw; }
@@ -389,25 +391,22 @@ footer { background:var(--lavender); border-top:2px solid var(--dark); color:var
 </head>
 <body>
 <div class="cursor" id="cursor"></div>
-<div class="menu-dim" id="menuDim"></div>
-<div class="menu-overlay" id="menuOverlay">
-  <nav class="menu-links">
-    <a href="#currently" class="menu-link">Now</a>
-    <a href="#photos" class="menu-link">Photos</a>
-    <a href="#travel" class="menu-link">Travel</a>
-    <a href="#books" class="menu-link">Books</a>
-    <a href="#tools" class="menu-link">Tools</a>
-    <a href="#about" class="menu-link">Bio</a>
-    <a href="#findme" class="menu-link">Connect</a>
-  </nav>
-</div>
 <nav>
   <a href="#" class="nav-logo" id="navLogo"></a>
+  <div class="nav-links-center">
+    <a href="#travel" class="nav-link">Travel Guides</a>
+    <a href="#books" class="nav-link">Books</a>
+    <a href="#tools" class="nav-link">Tools</a>
+    <a href="#photos" class="nav-link">Wallpapers</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#currently" class="nav-link">What I'm Up To</a>
+  </div>
   <button class="nav-hamburger" id="hamburger" aria-label="Menu">
     <div class="hamburger-lines"><span></span><span></span><span></span></div>
   </button>
 </nav>
-  <div class="menu-dim" id="menuDim"></div>
+
+<div class="menu-dim" id="menuDim"></div>
 
 <div class="menu-overlay" id="menuOverlay">
   <nav class="menu-links">
