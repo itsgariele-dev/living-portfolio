@@ -356,8 +356,8 @@ footer { background:var(--lavender); border-top:2px solid var(--dark); color:var
 }
 }
 @media (max-width:768px) {
-  nav{ display: none; }
-  .nav-links-center { display:none; }
+nav { position:fixed; top:0; left:0; right:0; z-index:400; background:var(--dark); border-bottom:2px solid var(--dark); display:flex; align-items:center; justify-content:center; padding:0 48px; height:56px; }
+.nav-links-center { display:flex; gap:28px; align-items:center; }
   .nav-hamburger { display:flex; }
  @media (max-width: 768px) {
 .hero { grid-template-columns: 1fr; min-height: auto; margin-top: 0; }
