@@ -91,12 +91,12 @@ const CONTENT = {
   // 6 images of you. Swap URLs for new personality shots.
   // On mobile only the first 2 show.
   photoStrip: [
-    "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me-joy.jpg",
-    "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me-dance.jpg",
-    "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me-hat.jpg",
-    "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me-computer.jpg",
-    "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me-smile.jpg",
+    "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me-laugh.jpg",
     "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me-beach.jpg",
+    "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me-renfrew.jpg",
+    "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me-joy.jpg",
+    "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me-water.jpg",
+    "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me-hat.jpg",
   ],
 
   // ── WALLPAPERS ────────────────────────────────────────────
