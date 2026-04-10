@@ -305,8 +305,7 @@ nav { position:fixed; top:0; left:0; right:0; z-index:400; background:var(--dark
   color: var(--dark);
   margin: 0;
 }
-.scroll-top { position:fixed; bottom:32px; right:32px; width:48px; height:48px; border-radius:50%; background:var(--accent); border:2px solid var(--dark); font-size:18px; font-weight:700; color:var(--dark); cursor:default; z-index:300; opacity:0; pointer-events:none; transition:opacity .2s; }
-.scroll-top.visible { opacity:1; pointer-events:all; }
+
 @media (max-width:768px) { .scroll-top { display:none; } }
 
   @media (max-width: 768px) {
@@ -667,11 +666,6 @@ function closeLightbox(){document.getElementById('ttlLightbox').classList.remove
   document.addEventListener('mouseup',()=>{isDown=false;el.style.userSelect='';});
   el.addEventListener('mousemove',e=>{if(!isDown)return;e.preventDefault();el.scrollLeft=scrollLeft-(e.pageX-el.offsetLeft-startX)*1.4;});
 });
-  const scrollTopBtn = document.getElementById('scrollTop');
-window.addEventListener('scroll', () => {
-  scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
-});
 </script>
-  <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 </body>
 </html>
