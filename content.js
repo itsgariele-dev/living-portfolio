@@ -15,23 +15,6 @@ const CONTENT = {
     location: "Victoria, BC",
   },
 
-  // ── HERO ──────────────────────────────────────────────────
-  // The 8 scattered background images. Swap any URL to refresh the collage.
-  hero: {
-    kicker: "Gariele Wright ✦ Victoria, BC",
-    sub: "Creative Strategist on Perpetual Side Quests",
-    images: [
-      "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/Copenhagen.jpg",
-      "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-4.jpg",
-      "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-2.jpg",
-      "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/Edinburgh.jpg",
-      "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-1.jpg",
-      "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/Victoria.jpg",
-      "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/Gothenburg.jpg",
-      "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/wallpaper-3.jpg",
-    ],
-  },
-
   // ── QUOTE ─────────────────────────────────────────────────
   quote: {
     // Words wrapped in ** will appear in green
@@ -46,21 +29,21 @@ const CONTENT = {
       label: "Reading",
       value: "Project Hail Mary — Andy Weir",
       link: "https://www.goodreads.com/book/show/54493401-project-hail-mary",
-      linkHint: "Open on Goodreads →",
+      linkHint: "Open on Goodreads",
       blurb: "The most fun I've had reading in years. Space science, zero pretension.",
     },
     {
       label: "Listening",
       value: "End of Beginning — Djo",
       link: "https://open.spotify.com/track/3qhlB30KknSejmIvZZLjOD",
-      linkHint: "Listen on Spotify →",
+      linkHint: "Listen on Spotify",
       blurb: "This song has lived in my head rent free for three months.",
     },
     {
       label: "Watching",
       value: "Survivor Season 50",
       link: "https://www.cbs.com/shows/survivor/",
-      linkHint: "Watch on CBS →",
+      linkHint: "Watch on CBS",
       blurb: "The all-winners season I didn't know I needed. Genuinely unhinged.",
     },
     {
@@ -94,13 +77,13 @@ const CONTENT = {
     cards: [
       "I once bumped into Jude Law wearing pajamas on the streets of Notting Hill in London.",
       "I have a degree in psychology but briefly considered going to school for marine biology.",
-      "I was born and raised in Trinidad and Tobago - even lived on a sailboat for one year.",
+      "I was born and raised in Trinidad and Tobago, where my lineage can be traced back multiple generations.",
     ],
     lightbox: {
       image: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me.jpg",
       tag: "You know me too well.",
       headline: "That's the lie. 🎉",
-      copy: "I actually studied Marketing but dropped out when I started my first business. My professors even used me as a case study after I left!",
+      copy: "I actually studied Marketing but dropped out when I started my first business, Rad Girls Collective. My professors used it as a case study after I left!",
     },
   },
 
