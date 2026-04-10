@@ -67,6 +67,20 @@ const CONTENT = {
       linkHint: "",
       blurb: "Golden hour on the water. Nothing beats it.",
     },
+    {
+  label: "Podcast",
+  value: "Love to See it — Scamanda",
+  link: "https://open.spotify.com/episode/00IHxifPxyXoDpN5QydggS?si=Uju2ChxiQXeCjKwUXVHCRA",
+  linkHint: "Listen on Spotify →",
+  blurb: "A con artist, a cancer lie, and a church community that believed every word. I am not okay.",
+},
+{
+  label: "Wanting",
+  value: "Canon RF 100-400mm Lens",
+  link: "https://kerrisdalecameras.com/shop/canon-rf-100-400mm-f5-6-8-is-usm/aea46ea0-f571-0139-5a7d-00163ecd2826",
+  linkHint: "Someone buy me this →",
+  blurb: "Wildlife and sport photography is calling my name. My wallet is not answering.",
+},
   ],
 
   // ── TWO TRUTHS AND A LIE ───────────────────────────────────
