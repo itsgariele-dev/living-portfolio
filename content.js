@@ -18,8 +18,8 @@ const CONTENT = {
   // ── QUOTE ─────────────────────────────────────────────────
   quote: {
     // Words wrapped in ** will appear in green
-    text: "IT TAKES A LOT OF **PLANNING** TO LOOK THIS **EFFORTLESS.**",
-    attribution: "— ME, A CHRONIC OVERTHINKER",
+    text: "CHEF'S **KISS**. EVERYTHING YOU TOUCH IS **GOLD.**",
+    attribution: "— MY BEST FRIEND, WHEN SHE SAW THIS PAGE.",
   },
 
   // ── CURRENTLY ─────────────────────────────────────────────
