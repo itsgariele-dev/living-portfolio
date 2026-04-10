@@ -33,7 +33,7 @@ const CONTENT = {
       blurb: "Space isn't usually my jam, but I loved the movie, so here we are.",
     },
     {
-      label: "Listening",
+      label: "Earworming",
       value: "End of Beginning — Djo",
       link: "https://open.spotify.com/track/3qhlB30KknSejmIvZZLjOD",
       linkHint: "Listen on Spotify",
@@ -54,11 +54,11 @@ const CONTENT = {
       blurb: "I don't care if this trended in 2021 - I'm still obsessed.",
     },
     {
-  label: "Podcast",
-  value: "Love to See it — Scamanda",
+  label: "Gossipping",
+  value: "Scamanda Drama!",
   link: "https://open.spotify.com/episode/00IHxifPxyXoDpN5QydggS?si=Uju2ChxiQXeCjKwUXVHCRA",
   linkHint: "Listen on Spotify",
-  blurb: "Any Summer House fans? I'm catching up on the latest drama.",
+  blurb: "My fav podcasters breakdown the latest Summer House dramz.",
 },
 {
   label: "Wanting",
