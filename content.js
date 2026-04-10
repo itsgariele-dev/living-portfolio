@@ -200,7 +200,11 @@ const CONTENT = {
   // stars: use ★ for filled, ☆ for empty — e.g. "★★★★☆"
   // coverUrl: leave as openlibrary URL or swap for a custom image
   // micro: your one-line review shown on the card
- books: {
+ // ── BOOKS ─────────────────────────────────────────────────
+  // stars: use ★ for filled, ☆ for empty — e.g. "★★★★☆"
+  // coverUrl: leave as openlibrary URL or swap for a custom image
+  // micro: your one-line review shown on the card
+  books: {
     subheading: "Dark fiction. No apologies.",
     items: [
       {
@@ -231,6 +235,15 @@ const CONTENT = {
         reviewUrl: "https://fable.co/review/3c4a37aa-f48f-45ac-959a-f2436cf96c18/share",
       },
       {
+        title: "I'm Thinking of Ending Things",
+        author: "Iain Reid",
+        stars: "★★★★☆",
+        micro: "Read it in one sitting. Stared at the wall for twenty minutes after.",
+        coverUrl: "https://covers.openlibrary.org/b/isbn/9781501126949-L.jpg",
+        coverBg: "#1a1a2a",
+        reviewUrl: "https://fable.co/review/031a1244-8d35-4d76-800f-255950585479/share",
+      },
+      {
         title: "Cursed Bunny",
         author: "Bora Chung",
         stars: "★★★★☆",
@@ -247,6 +260,15 @@ const CONTENT = {
         coverUrl: "https://dynamic.indigoimages.ca/v1/books/books/1645661261/1.jpg",
         coverBg: "#2c3a2c",
         reviewUrl: "https://booksbeneath.substack.com/p/a-twisted-story-of-revenge-told-through",
+      },
+      {
+        title: "My Darling Dreadful Thing",
+        author: "Johanna van Veen",
+        stars: "★★★★☆",
+        micro: "Gothic and strange and completely my thing.",
+        coverUrl: "https://covers.openlibrary.org/b/OLID/OL50647058M-L.jpg",
+        coverBg: "#2c3a2c",
+        reviewUrl: "https://fable.co/review/4392092e-ffa0-474d-ad3a-432ecd8b83b5/share",
       },
       {
         title: "Ring Shout",
