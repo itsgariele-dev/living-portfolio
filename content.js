@@ -93,8 +93,8 @@ const CONTENT = {
   photoStrip: [
     "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me-laugh.jpg",
     "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me-renfrew.jpg",
-    "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me-joy.jpg",
     "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me-beach.jpg",
+    "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me-joy.jpg",
     "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me-water.jpg",
     "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me-hat.jpg",
   ],
