@@ -28,7 +28,8 @@ body { background:var(--cream); color:var(--dark); font-family:var(--sans); over
   .cursor { display:block; width:20px; height:20px; border-radius:50%; background:#000; border:3px solid var(--accent); position:fixed; top:0; left:0; pointer-events:none; z-index:9999; transform:translate(-50%,-50%); transition:width .15s, height .15s, background .15s; will-change:transform; }
 }
 nav { position:fixed; top:0; left:0; right:0; z-index:400; background:var(--dark); border-bottom:2px solid var(--dark); display:flex; align-items:center; justify-content:center; padding:0 48px; height:56px; }
-.nav-links-center { display:flex; gap:28px; align-items:center; }
+.nav-logo { display:none; }
+  .nav-links-center { display:flex; gap:28px; align-items:center; }
 .nav-link { font-family:var(--mono); font-size:14px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--lavender); text-decoration:none; padding-bottom:2px; border-bottom:2px solid var(--lavender); transition:opacity .15s; }
 .nav-link:hover { opacity:0.7; }
 .nav-hamburger { display:none; align-items:center; background:none; border:none; padding:8px; cursor:default; }
