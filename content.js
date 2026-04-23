@@ -19,7 +19,7 @@ const CONTENT = {
   quote: {
     // Words wrapped in ** will appear in green
     text: "CHEF'S **KISS**. EVERYTHING YOU TOUCH IS **GOLD.**",
-    attribution: "— MY BEST FRIEND, WHEN SHE SAW THIS PAGE.",
+    attribution: "— MY BEST FRIEND, WHEN SHE SAW THIS.",
   },
 
   // ── CURRENTLY ─────────────────────────────────────────────
@@ -43,7 +43,7 @@ const CONTENT = {
       label: "Watching",
       value: "Survivor Season 50",
       link: "https://www.cbs.com/shows/survivor/",
-      linkHint: "Play a Game",
+      linkHint: "Game Coming Soon",
       blurb: "LOVE me some reality competition television, especially this one.",
     },
     {
@@ -329,7 +329,7 @@ const CONTENT = {
   photoSecondaryUrl: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/me-smile.jpg",
     name: "Gariele",
     pronunciation: "[gary-elle]",
-    bio: "You might be wondering: how did you get here? Well, dear reader, it all began in 1989... Oh wait, no. That year belongs to Taylor Swift. This is my story...",
+    bio: "You might be wondering: how did you get here? Well, dear reader, it all began in 1989... Oh wait, that year belongs to Taylor Swift. This is my story...",
     timeline: [
       { year: "2014", title: "Built my first business - by accident.", story: "While working on my Marketing degree, I had a spontaneous idea to create a group for adventurous women to connect. That little idea became my first business, Rad Girls Collective. Within 2 years, we had over 100k audience members and landed collaborations with Lululemon and MEC." },
       { year: "2015", title: "Altered my life by becoming a Mom.", story: "Welcomed my amazing daughter into the world. She's 11 now, and we're best friends. I've shown her this website and her favourite part is the 2 Truths + 1 Lie." },
