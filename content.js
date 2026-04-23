@@ -341,7 +341,7 @@ const CONTENT = {
   },
   // ── ZONES OF GENIUS ───────────────────────────────────────
   zones: [
-    { label: "01", title: "Brand Strategy", description: "Tell me about your business and I'll tell you who you are." },
+    { label: "01", title: "Brand <del>Strategy</del> Psychic", description: "Tell me about your business and I'll tell you who you are." },
     { label: "02", title: "Website Design", description: "You can build a Google Doc. I can build a website. Same energy." },
     { label: "03", title: "Photography", description: "Singlehandedly upholding your Christmas card photos and LinkedIn profile pics." },
     { label: "04", title: "Visual Design", description: "Go ahead, ask me what I designed this week in Canva or Adobe. I dare you!" },
