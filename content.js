@@ -77,7 +77,7 @@ const CONTENT = {
     cards: [
       "I once bumped into Jude Law wearing pajamas on the streets of Notting Hill in London.",
       "I have a degree in Psychology but briefly considered going to school for Marine Biology.",
-      "I was born and raised in Trinidad and Tobago, where my lineage can be traced back multiple generations.",
+      "I am a classically-trained singer and studied for 7 years with the Conservatory of Music.",
     ],
     lightbox: {
       image: "https://raw.githubusercontent.com/itsgariele-dev/living-portfolio/refs/heads/main/images/rad-girls.jpg",
