@@ -343,7 +343,7 @@ const CONTENT = {
   zones: [
     { label: "01", title: "Brand <del>Strategy</del> Psychic", description: "Tell me about your business and I'll tell you who you are." },
     { label: "02", title: "Website Design", description: "You can build a Google Doc. I can build a website. Same energy." },
-    { label: "03", title: "Photography", description: "Singlehandedly upholding your Christmas card photos and LinkedIn profile pics." },
+    { label: "03", title: "Photography", description: "Blessing your eyes, walls, and Christmas cards since 2014." },
     { label: "04", title: "Visual Design", description: "Go ahead, ask me what I designed this week in Canva or Adobe. I dare you!" },
     { label: "05", title: "Hyper Coding", description: "The apps nobody asked for. Like vibe coding, but driven by OCD." },
     { label: "06", title: "Serial Builder", description: "I don't have ideas. I have things I've already built." },
