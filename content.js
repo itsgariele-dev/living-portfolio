@@ -34,7 +34,7 @@ const CONTENT = {
     },
     {
       label: "Earworming",
-      value: "Hotel California (Live 1994) - Eagles",
+      value: "Hotel California (Live 1994) — Eagles",
       link: "https://open.spotify.com/track/2GpBrAoCwt48fxjgjlzMd4?si=6YbINI4TRau53rjOZIVxeQ",
       linkHint: "Listen on Spotify",
       blurb: "Her mind is Tiffany twisted. She's got the Mercedes bends. Ugh, lyric perfection.",
