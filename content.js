@@ -34,10 +34,10 @@ const CONTENT = {
     },
     {
       label: "Earworming",
-      value: "End of Beginning — Djo",
-      link: "https://open.spotify.com/track/3qhlB30KknSejmIvZZLjOD",
+      value: "Hotel California (Live 1994) - Eagles",
+      link: "https://open.spotify.com/track/2GpBrAoCwt48fxjgjlzMd4?si=6YbINI4TRau53rjOZIVxeQ",
       linkHint: "Listen on Spotify",
-      blurb: "I play this when I need to calm down my brain, which is often.",
+      blurb: "Her mind is Tiffany twisted. She's got the Mercedes bends. Ugh, lyric perfection.",
     },
     {
       label: "Watching",
