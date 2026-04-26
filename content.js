@@ -27,17 +27,17 @@ const CONTENT = {
   currently: [
     {
       label: "Reading",
-      value: "Project Hail Mary — Andy Weir",
-      link: "https://www.goodreads.com/book/show/54493401-project-hail-mary",
+      value: "Nowhere Burning &mdash; Catriona Ward",
+      link: "https://www.goodreads.com/book/show/217387837-nowhere-burning",
       linkHint: "Open on Goodreads",
-      blurb: "Space isn't usually my jam, but I loved the movie, so here we are.",
+      blurb: "Runaway children living off the land and giving to something sinister.",
     },
     {
       label: "Earworming",
-      value: "Hotel California (Live 1994) — Eagles",
+      value: "Hotel California (Live 1994) &mdash; Eagles",
       link: "https://open.spotify.com/track/2GpBrAoCwt48fxjgjlzMd4?si=6YbINI4TRau53rjOZIVxeQ",
       linkHint: "Listen on Spotify",
-      blurb: "Her mind is Tiffany twisted. She's got the Mercedes bends. Ugh, lyric perfection.",
+      blurb: "Her mind is Tiffany twisted. She's got the Mercedes bends...",
     },
     {
       label: "Watching",
