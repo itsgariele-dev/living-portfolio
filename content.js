@@ -30,7 +30,7 @@ const CONTENT = {
       value: "Nowhere Burning &mdash; Catriona Ward",
       link: "https://www.goodreads.com/book/show/217387837-nowhere-burning",
       linkHint: "Open on Goodreads",
-      blurb: "Runaway children living off the land and giving to something sinister.",
+      blurb: "Runaway children living off the land and giving in to something sinister.",
     },
     {
       label: "Earworming",
