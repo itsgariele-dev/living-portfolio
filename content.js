@@ -27,10 +27,10 @@ const CONTENT = {
   currently: [
     {
       label: "Reading",
-      value: "Nowhere Burning &mdash; Catriona Ward",
-      link: "https://www.goodreads.com/book/show/217387837-nowhere-burning",
+      value: "Julie Chan is Dead &mdash; Liann Zhang",
+      link: "https://www.goodreads.com/book/show/220195725-julie-chan-is-dead",
       linkHint: "Open on Goodreads",
-      blurb: "Runaway children living off the land and giving in to something sinister.",
+      blurb: "A woman's twin sister dies and she assumes her identity. OOOHHH MY.",
     },
     {
       label: "Earworming",
