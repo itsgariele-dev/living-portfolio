@@ -27,10 +27,10 @@ const CONTENT = {
   currently: [
     {
       label: "Reading",
-      value: "Julie Chan is Dead &mdash; Liann Zhang",
-      link: "https://www.goodreads.com/book/show/220195725-julie-chan-is-dead",
+      value: "The September House &mdash; Carissa Orlando",
+      link: "https://www.goodreads.com/book/show/64623481-the-september-house",
       linkHint: "Open on Goodreads",
-      blurb: "A woman's twin sister dies and she assumes her identity. OOOHHH MY.",
+      blurb: "The haunted house story I didn't know I needed.",
     },
     {
       label: "Earworming",
