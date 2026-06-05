@@ -27,10 +27,10 @@ const CONTENT = {
   currently: [
     {
       label: "Reading",
-      value: "The September House &mdash; Carissa Orlando",
-      link: "https://www.goodreads.com/book/show/64623481-the-september-house",
+      value: "Circe &mdash; Madeline Miller",
+      link: "https://www.goodreads.com/book/show/35959740-circe",
       linkHint: "Open on Goodreads",
-      blurb: "The haunted house story I didn't know I needed.",
+      blurb: "The mythological retelling of a divine daughter.",
     },
     {
       label: "Earworming",
@@ -41,10 +41,10 @@ const CONTENT = {
     },
     {
       label: "Watching",
-      value: "Survivor Season 50",
-      link: "https://www.cbs.com/shows/survivor/",
-      linkHint: "Game Coming Soon",
-      blurb: "LOVE me some reality competition television, especially this one.",
+      value: "Love Island USA",
+      link: "",
+      linkHint: "",
+      blurb: "Summer has officially begun! See you in a couple months.",
     },
     {
       label: "Eating",
@@ -54,11 +54,11 @@ const CONTENT = {
       blurb: "I don't care if this trended in 2021 - I'm still obsessed.",
     },
     {
-  label: "Gossipping",
-  value: "Scamanda Drama!",
-  link: "https://open.spotify.com/episode/00IHxifPxyXoDpN5QydggS?si=Uju2ChxiQXeCjKwUXVHCRA",
-  linkHint: "Listen on Spotify",
-  blurb: "My fav podcasters breakdown the latest Summer House dramz.",
+  label: "Deep Diving",
+  value: "Due diligence for investments",
+  link: "",
+  linkHint: "",
+  blurb: "Who knew my OCD would be such a superpower?",
 },
 {
   label: "Wanting",
