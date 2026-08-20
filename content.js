@@ -27,10 +27,10 @@ const CONTENT = {
   currently: [
     {
       label: "Reading",
-      value: "Circe &mdash; Madeline Miller",
-      link: "https://www.goodreads.com/book/show/35959740-circe",
+      value: "Nightcats &mdash; Kristen J. Sollée",
+      link: "https://www.goodreads.com/book/show/256129087-nightcats",
       linkHint: "Open on Goodreads",
-      blurb: "The mythological retelling of a divine daughter.",
+      blurb: "A feral, feminist, feline vampire novel.",
     },
     {
       label: "Earworming",
@@ -40,11 +40,11 @@ const CONTENT = {
       blurb: "Her mind is Tiffany twisted. She's got the Mercedes bends...",
     },
     {
-      label: "Watching",
-      value: "Love Island USA",
+      label: "Playing",
+      value: "Pokemon Go",
       link: "",
-      linkHint: "",
-      blurb: "Summer has officially begun! See you in a couple months.",
+      linkHint: "#CatchEmAll",
+      blurb: "I actually never stopped playing Pokemon.",
     },
     {
       label: "Eating",
@@ -61,11 +61,11 @@ const CONTENT = {
   blurb: "Who knew my OCD would be such a superpower?",
 },
 {
-  label: "Wanting",
-  value: "Canon RF 100-400mm Lens",
-  link: "https://kerrisdalecameras.com/shop/canon-rf-100-400mm-f5-6-8-is-usm/aea46ea0-f571-0139-5a7d-00163ecd2826",
-  linkHint: "Someone buy me this",
-  blurb: "I promised myself I wouldn't collect more lenses. Oops.",
+  label: "Exploring",
+  value: "Desolation Sound, BC",
+  link: "",
+  linkHint: "",
+  blurb: "The most gorgeous place on earth!",
 },
   ],
 
