@@ -27,10 +27,10 @@ const CONTENT = {
   currently: [
     {
       label: "Reading",
-      value: "Nightcats &mdash; Kristen J. Sollée",
-      link: "https://www.goodreads.com/book/show/256129087-nightcats",
+      value: "Something in the Walls - Daisy Pearce",
+      link: "https://www.goodreads.com/en/book/show/211004350-something-in-the-walls",
       linkHint: "Open on Goodreads",
-      blurb: "A feral, feminist, feline vampire novel.",
+      blurb: "I'm back to horror, just in time for the dark months.",
     },
     {
       label: "Earworming",
